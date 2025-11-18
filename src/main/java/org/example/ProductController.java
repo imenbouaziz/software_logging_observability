@@ -1,6 +1,6 @@
 package org.example;
+
 import java.time.LocalDate;
-import java.util.List;
 
 public class ProductController {
     private ProductService service;
@@ -9,23 +9,23 @@ public class ProductController {
         this.service = service;
     }
 
-    public List<Product> getAllProducts() {
-        return service.getAllProducts();
+    public void getAllProducts() {
+        service.getAllProducts();
     }
 
-    public Product getProductById(int id) throws Exception {
-        return service.getProductById(id);
+    public void getProductById(int id) {
+        service.getProductById(id);
     }
 
-    public void addProduct(Product product) throws Exception {
+    public void addProduct(Product product) {
         service.addProduct(product);
     }
 
-    public void deleteProduct(int id) throws Exception {
+    public void deleteProduct(int id) {
         service.deleteProduct(id);
     }
 
-    public void updateProduct(int id, String name, double price, LocalDate expiration_date) throws Exception {
+    public void updateProduct(int id, String name, double price, LocalDate expiration_date) {
         service.updateProduct(id, name, price, expiration_date);
     }
 }
