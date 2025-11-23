@@ -1,31 +1,42 @@
 package org.example;
 
+import org.springframework.web.bind.annotation.*;
 import java.time.LocalDate;
+import java.util.List;
 
+@RestController
+@RequestMapping("/products")
 public class ProductController {
-    private ProductService service;
+    private final ProductService service;
 
     public ProductController(ProductService service) {
         this.service = service;
     }
 
-    public void getAllProducts() {
-        service.getAllProducts();
+    @GetMapping
+    public List<Product> getAllProducts() {
+        return service.getAllProducts();
     }
 
-    public void getProductById(int id) {
-        service.getProductById(id);
+    @GetMapping("/{id}")
+    public Product getProductById(@PathVariable int id) {
+        return service.getProductById(id);
     }
 
-    public void addProduct(Product product) {
+    @PostMapping
+    public void addProduct(@RequestBody Product product) {
         service.addProduct(product);
     }
 
-    public void deleteProduct(int id) {
+    @DeleteMapping("/{id}")
+    public void deleteProduct(@PathVariable int id) {
         service.deleteProduct(id);
     }
-
-    public void updateProduct(int id, String name, double price, LocalDate expiration_date) {
+    @PutMapping("/{id}")
+    public void updateProduct(@PathVariable int id,
+                              @RequestParam String name,
+                              @RequestParam double price,
+                              @RequestParam LocalDate expiration_date) {
         service.updateProduct(id, name, price, expiration_date);
     }
 }

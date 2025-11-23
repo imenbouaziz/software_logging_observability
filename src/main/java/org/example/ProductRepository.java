@@ -1,10 +1,13 @@
 package org.example;
 
 import com.google.firebase.database.*;
+import org.springframework.stereotype.Repository;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class ProductRepository {
     private final DatabaseReference productRef;
 

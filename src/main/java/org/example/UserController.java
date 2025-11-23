@@ -1,17 +1,24 @@
 package org.example;
 
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/users")
 public class UserController {
-    private UserService service;
+    private final UserService service;
 
     public UserController(UserService service) {
         this.service = service;
     }
 
-    public void register(User user) throws Exception {
+    @PostMapping("/register")
+    public void register(@RequestBody User user) throws Exception {
         service.register(user);
     }
 
-    public User login(String email, String password) throws Exception {
+    @PostMapping("/login")
+    public User login(@RequestParam String email,
+                      @RequestParam String password) throws Exception {
         return service.authenticate(email, password);
     }
 }

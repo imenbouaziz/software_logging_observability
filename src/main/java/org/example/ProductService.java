@@ -1,7 +1,11 @@
 package org.example;
 
-import java.time.LocalDate;
+import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
+import java.util.List;
+
+@Service
 public class ProductService {
     private ProductRepository repo;
 
@@ -9,12 +13,14 @@ public class ProductService {
         this.repo = repo;
     }
 
-    public void getAllProducts() {
+    public List<Product> getAllProducts() {
         repo.getAllProducts();
+        return null;
     }
 
-    public void getProductById(int id) {
+    public Product getProductById(int id) {
         repo.getProductById(id);
+        return null;
     }
 
     public void addProduct(Product product) {

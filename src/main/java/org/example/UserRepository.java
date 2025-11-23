@@ -1,7 +1,9 @@
 package org.example;
 
 import com.google.firebase.database.*;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class UserRepository {
     private final DatabaseReference userRef;
 
