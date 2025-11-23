@@ -1,6 +1,7 @@
 package org.example;
 
 import com.google.firebase.database.*;
+import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
@@ -9,9 +10,13 @@ import java.util.List;
 
 @Repository
 public class ProductRepository {
-    private final DatabaseReference productRef;
+    private DatabaseReference productRef;
 
     public ProductRepository() {
+    }
+    //init after spring got ready not directly
+    @PostConstruct
+    public void init() {
         this.productRef = FirebaseDatabase.getInstance().getReference("products");
     }
 

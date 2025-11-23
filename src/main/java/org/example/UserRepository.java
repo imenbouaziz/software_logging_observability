@@ -1,15 +1,22 @@
 package org.example;
 
 import com.google.firebase.database.*;
+import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public class UserRepository {
-    private final DatabaseReference userRef;
+    private DatabaseReference userRef;
 
     public UserRepository() {
+
+    }
+
+    @PostConstruct
+    public void init() {
         this.userRef = FirebaseDatabase.getInstance().getReference("users");
     }
+
 
     public void addUser(User user) {
         DatabaseReference counterRef = FirebaseDatabase.getInstance().getReference("counters/users");
