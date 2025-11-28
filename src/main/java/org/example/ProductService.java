@@ -17,10 +17,14 @@ public class ProductService {
     }
 
     public List<Product> getAllProducts() {
-        log.info("Fetching products");
-        repo.getAllProducts();
-        return null;
+        try {
+            return repo.getAllProducts().get(); // block until Firebase returns
+        } catch (Exception e) {
+            log.error("Error fetching products", e);
+            return List.of();
+        }
     }
+
 
     public Product getProductById(int id) {
         repo.getProductById(id);

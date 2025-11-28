@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 @Repository
 public class ProductRepository {
@@ -109,7 +110,8 @@ public class ProductRepository {
                 });
     }
 
-    public void getAllProducts() {
+    public CompletableFuture<List<Product>> getAllProducts() {
+        CompletableFuture<List<Product>> future = new CompletableFuture<>();
         productRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
@@ -117,13 +119,15 @@ public class ProductRepository {
                 for (DataSnapshot child : snapshot.getChildren()) {
                     products.add(child.getValue(Product.class));
                 }
-                System.out.println("Products: " + products);
+                future.complete(products);
             }
 
             @Override
             public void onCancelled(DatabaseError error) {
-                System.err.println("Error: " + error.getMessage());
+                future.completeExceptionally(new RuntimeException(error.getMessage()));
             }
         });
+        return future;
     }
+
 }
