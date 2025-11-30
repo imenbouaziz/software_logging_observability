@@ -16,12 +16,11 @@ public class MethodVisitor {
 
     public void visit(CtType<?> type) {
         ensureLoggerField(type);
-
         for (CtMethod<?> method : type.getMethods()) {
             if (method.getBody() != null) {
                 String action = determineAction(method.getSimpleName());
                 String methodName = method.getSimpleName();
-                String log = "logger.info(\"ACTION | userId={} | action={} | method={}\", userId, \""
+                String log = "logger.info(\"ACTION | userId={} | action={} | method={}\", id, \""
                         + action + "\", \"" + methodName + "\")";
                 CtCodeSnippetStatement snippet = factory.Code().createCodeSnippetStatement(log);
                 method.getBody().insertBegin(snippet);
@@ -33,6 +32,8 @@ public class MethodVisitor {
         if (type.getField("logger") != null) return;
 
         var loggerType = factory.Type().createReference("org.slf4j.Logger");
+        String newQualifiedName = type.getQualifiedName()
+                .replace("org.example", "org.example.logs_tp_backend_spooned");
         var loggerField = factory.createField(
                 type,
                 java.util.EnumSet.of(spoon.reflect.declaration.ModifierKind.PRIVATE,
@@ -41,7 +42,7 @@ public class MethodVisitor {
                 loggerType,
                 "logger",
                 factory.Code().createCodeSnippetExpression(
-                        "org.slf4j.LoggerFactory.getLogger(" + type.getQualifiedName() + ".class)"
+                        "org.slf4j.LoggerFactory.getLogger(" + newQualifiedName + ".class)"
                 )
         );
     }

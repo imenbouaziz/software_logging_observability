@@ -1,4 +1,4 @@
-package org.example;
+package org.example.logs_tp_backend_spooned;
 import org.slf4j.Logger;
 public class User {
     private int ID;
@@ -21,7 +21,7 @@ public class User {
 
     public int getID() {
         logger.info("ACTION | userId={} | action={} | method={}", id, "READ", "getID");
-        return ID;
+        return this.ID;
     }
 
     public void setID(int ID) {
@@ -31,7 +31,7 @@ public class User {
 
     public String getName() {
         logger.info("ACTION | userId={} | action={} | method={}", id, "READ", "getName");
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -41,7 +41,7 @@ public class User {
 
     public int getAge() {
         logger.info("ACTION | userId={} | action={} | method={}", id, "READ", "getAge");
-        return age;
+        return this.age;
     }
 
     public void setAge(int age) {
@@ -51,7 +51,7 @@ public class User {
 
     public String getEmail() {
         logger.info("ACTION | userId={} | action={} | method={}", id, "READ", "getEmail");
-        return email;
+        return this.email;
     }
 
     public void setEmail(String email) {
@@ -61,7 +61,7 @@ public class User {
 
     public String getPassword() {
         logger.info("ACTION | userId={} | action={} | method={}", id, "READ", "getPassword");
-        return password;
+        return this.password;
     }
 
     public void setPassword(String password) {
@@ -69,5 +69,5 @@ public class User {
         this.password = password;
     }
 
-    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.User.class);
+    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.logs_tp_backend_spooned.User.class);
 }

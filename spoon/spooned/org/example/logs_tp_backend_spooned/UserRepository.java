@@ -1,11 +1,11 @@
-package org.example;
+package org.example.logs_tp_backend_spooned;
 import DataSnapshot;
 import DatabaseError;
 import FirebaseDatabase;
 import ValueEventListener;
-import org.slf4j.Logger;
-import com.google.firebase.database.*;
 import jakarta.annotation.PostConstruct;
+import org.example.DatabaseReference;
+import org.slf4j.Logger;
 import org.springframework.stereotype.Repository;
 @Repository
 public class UserRepository {
@@ -20,7 +20,7 @@ public class UserRepository {
         this.userRef = FirebaseDatabase.getInstance().getReference("users");
     }
 
-    public void addUser(User user) {
+    public void addUser(org.example.User user) {
         logger.info("ACTION | userId={} | action={} | method={}", id, "WRITE", "addUser");
         DatabaseReference counterRef = FirebaseDatabase.getInstance().getReference("counters/users");
         counterRef.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -30,7 +30,7 @@ public class UserRepository {
                 long newId = currentId + 1;
                 counterRef.setValueAsync(newId);
                 user.setID(((int) (newId)));
-                userRef.child(String.valueOf(newId)).setValueAsync(user);
+                org.example.UserRepository.this.userRef.child(String.valueOf(newId)).setValueAsync(user);
                 System.out.println("User registered with id: " + newId);
             }
 
@@ -43,11 +43,11 @@ public class UserRepository {
 
     public void getUser(int id) {
         logger.info("ACTION | userId={} | action={} | method={}", id, "READ", "getUser");
-        userRef.child(String.valueOf(id)).addListenerForSingleValueEvent(new ValueEventListener() {
+        this.userRef.child(String.valueOf(id)).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 if (snapshot.exists()) {
-                    User user = snapshot.getValue(User.class);
+                    org.example.User user = snapshot.getValue(org.example.User.class);
                     System.out.println("Found user: " + user.getName());
                 } else {
                     System.out.println("User not found");
@@ -63,12 +63,12 @@ public class UserRepository {
 
     public void getUserByEmail(String email) {
         logger.info("ACTION | userId={} | action={} | method={}", id, "READ", "getUserByEmail");
-        userRef.orderByChild("email").equalTo(email).addListenerForSingleValueEvent(new ValueEventListener() {
+        this.userRef.orderByChild("email").equalTo(email).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 if (snapshot.exists()) {
                     for (DataSnapshot child : snapshot.getChildren()) {
-                        User user = child.getValue(User.class);
+                        org.example.User user = child.getValue(org.example.User.class);
                         System.out.println("Found user: " + user.getName());
                         return;
                     }
@@ -84,5 +84,5 @@ public class UserRepository {
         });
     }
 
-    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.UserRepository.class);
+    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.logs_tp_backend_spooned.UserRepository.class);
 }

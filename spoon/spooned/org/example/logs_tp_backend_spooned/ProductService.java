@@ -1,4 +1,4 @@
-package org.example;
+package org.example.logs_tp_backend_spooned;
 import java.time.LocalDate;
 import java.util.List;
 import org.slf4j.Logger;
@@ -6,45 +6,45 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 @Service
 public class ProductService {
-    private ProductRepository repo;
+    private org.example.ProductRepository repo;
 
-    private static final Logger log = LoggerFactory.getLogger(ProductService.class);
+    private static final Logger log = LoggerFactory.getLogger(org.example.ProductService.class);
 
-    public ProductService(ProductRepository repo) {
+    public ProductService(org.example.ProductRepository repo) {
         this.repo = repo;
     }
 
-    public List<Product> getAllProducts() {
+    public List<org.example.Product> getAllProducts() {
         logger.info("ACTION | userId={} | action={} | method={}", id, "READ", "getAllProducts");
         try {
-            return repo.getAllProducts().get();// block until Firebase returns
+            return this.repo.getAllProducts().get();// block until Firebase returns
 
         } catch (Exception e) {
-            log.error("Error fetching products", e);
+            org.example.ProductService.log.error("Error fetching products", e);
             return List.of();
         }
     }
 
-    public Product getProductById(int id) {
+    public org.example.Product getProductById(int id) {
         logger.info("ACTION | userId={} | action={} | method={}", id, "READ", "getProductById");
-        repo.getProductById(id);
+        this.repo.getProductById(id);
         return null;
     }
 
-    public void addProduct(Product product) {
+    public void addProduct(org.example.Product product) {
         logger.info("ACTION | userId={} | action={} | method={}", id, "WRITE", "addProduct");
-        repo.addProduct(product);
+        this.repo.addProduct(product);
     }
 
     public void deleteProduct(int id) {
         logger.info("ACTION | userId={} | action={} | method={}", id, "WRITE", "deleteProduct");
-        repo.deleteProduct(id);
+        this.repo.deleteProduct(id);
     }
 
     public void updateProduct(int id, String name, double price, LocalDate expiration_date) {
         logger.info("ACTION | userId={} | action={} | method={}", id, "WRITE", "updateProduct");
-        repo.updateProduct(id, name, price, expiration_date);
+        this.repo.updateProduct(id, name, price, expiration_date);
     }
 
-    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.ProductService.class);
+    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.logs_tp_backend_spooned.ProductService.class);
 }

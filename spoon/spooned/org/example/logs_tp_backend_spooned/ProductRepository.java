@@ -1,15 +1,15 @@
-package org.example;
+package org.example.logs_tp_backend_spooned;
 import DataSnapshot;
 import DatabaseError;
 import FirebaseDatabase;
 import ValueEventListener;
+import jakarta.annotation.PostConstruct;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+import org.example.DatabaseReference;
 import org.slf4j.Logger;
-import com.google.firebase.database.*;
-import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Repository;
 @Repository
 public class ProductRepository {
@@ -27,11 +27,11 @@ public class ProductRepository {
 
     public void getProductById(int id) {
         logger.info("ACTION | userId={} | action={} | method={}", id, "READ", "getProductById");
-        productRef.child(String.valueOf(id)).addListenerForSingleValueEvent(new ValueEventListener() {
+        this.productRef.child(String.valueOf(id)).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 if (snapshot.exists()) {
-                    Product product = snapshot.getValue(Product.class);
+                    org.example.Product product = snapshot.getValue(org.example.Product.class);
                     System.out.println("Found product: " + product.getName());
                 } else {
                     System.out.println("Product not found");
@@ -45,7 +45,7 @@ public class ProductRepository {
         });
     }
 
-    public void addProduct(Product product) {
+    public void addProduct(org.example.Product product) {
         logger.info("ACTION | userId={} | action={} | method={}", id, "WRITE", "addProduct");
         DatabaseReference counterRef = FirebaseDatabase.getInstance().getReference("counters/products");
         counterRef.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -55,7 +55,7 @@ public class ProductRepository {
                 long newId = currentId + 1;
                 counterRef.setValueAsync(newId);
                 product.setId(((int) (newId)));
-                productRef.child(String.valueOf(newId)).setValueAsync(product);
+                org.example.ProductRepository.this.productRef.child(String.valueOf(newId)).setValueAsync(product);
                 System.out.println("Product added with id: " + newId);
             }
 
@@ -68,13 +68,13 @@ public class ProductRepository {
 
     public void deleteProduct(int id) {
         logger.info("ACTION | userId={} | action={} | method={}", id, "WRITE", "deleteProduct");
-        productRef.child(String.valueOf(id)).addListenerForSingleValueEvent(new ValueEventListener() {
+        this.productRef.child(String.valueOf(id)).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 if (!snapshot.exists()) {
                     System.out.println("Product not found");
                 } else {
-                    productRef.child(String.valueOf(id)).removeValueAsync();
+                    org.example.ProductRepository.this.productRef.child(String.valueOf(id)).removeValueAsync();
                     System.out.println("Product deleted");
                 }
             }
@@ -88,18 +88,18 @@ public class ProductRepository {
 
     public void updateProduct(int id, String name, double price, LocalDate expiration_date) {
         logger.info("ACTION | userId={} | action={} | method={}", id, "WRITE", "updateProduct");
-        productRef.child(String.valueOf(id)).addListenerForSingleValueEvent(new ValueEventListener() {
+        this.productRef.child(String.valueOf(id)).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 if (!snapshot.exists()) {
                     System.out.println("Product not found");
                 } else {
-                    Product existing = snapshot.getValue(Product.class);
+                    org.example.Product existing = snapshot.getValue(org.example.Product.class);
                     if (existing != null) {
                         existing.setName(name);
                         existing.setPrice(price);
                         existing.setExpiration_date(expiration_date);
-                        productRef.child(String.valueOf(id)).setValueAsync(existing);
+                        org.example.ProductRepository.this.productRef.child(String.valueOf(id)).setValueAsync(existing);
                         System.out.println("Product updated");
                     }
                 }
@@ -112,15 +112,15 @@ public class ProductRepository {
         });
     }
 
-    public CompletableFuture<List<Product>> getAllProducts() {
+    public CompletableFuture<List<org.example.Product>> getAllProducts() {
         logger.info("ACTION | userId={} | action={} | method={}", id, "READ", "getAllProducts");
-        CompletableFuture<List<Product>> future = new CompletableFuture<>();
-        productRef.addListenerForSingleValueEvent(new ValueEventListener() {
+        CompletableFuture<List<org.example.Product>> future = new CompletableFuture<>();
+        this.productRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                List<Product> products = new ArrayList<>();
+                List<org.example.Product> products = new ArrayList<>();
                 for (DataSnapshot child : snapshot.getChildren()) {
-                    products.add(child.getValue(Product.class));
+                    products.add(child.getValue(org.example.Product.class));
                 }
                 future.complete(products);
             }
@@ -133,5 +133,5 @@ public class ProductRepository {
         return future;
     }
 
-    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.ProductRepository.class);
+    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.logs_tp_backend_spooned.ProductRepository.class);
 }

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.logs_tp_backend_spooned;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
@@ -7,20 +7,20 @@ public class Cli {
     public static void main(String[] args) throws Exception {
         logger.info("ACTION | userId={} | action={} | method={}", id, "UNKNOWN", "main");
         try {
-            FirebaseInitializer.initialize();
+            org.example.FirebaseInitializer.initialize();
         } catch (Exception e) {
             e.printStackTrace();
             return;
         }
         Scanner scanner = new Scanner(System.in);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        UserRepository userRepo = new UserRepository();
-        UserService userService = new UserService(userRepo);
-        UserController userController = new UserController(userService);
-        ProductRepository productRepo = new ProductRepository();
-        ProductService productService = new ProductService(productRepo);
-        ProductController productController = new ProductController(productService);
-        User currentUser = null;
+        org.example.UserRepository userRepo = new org.example.UserRepository();
+        org.example.UserService userService = new org.example.UserService(userRepo);
+        org.example.UserController userController = new org.example.UserController(userService);
+        org.example.ProductRepository productRepo = new org.example.ProductRepository();
+        org.example.ProductService productService = new org.example.ProductService(productRepo);
+        org.example.ProductController productController = new org.example.ProductController(productService);
+        org.example.User currentUser = null;
         while (currentUser == null) {
             System.out.println("\nexercice 1 ---------------------------");
             System.out.println("1.Register");
@@ -37,7 +37,7 @@ public class Cli {
                     String email = scanner.nextLine();
                     System.out.print("Enter password: ");
                     String password = scanner.nextLine();
-                    userController.register(new User(0, name, age, email, password));
+                    userController.register(new org.example.User(0, name, age, email, password));
                     System.out.println("Registration successful, please login.");
                     break;
                 case 2 :
@@ -46,7 +46,7 @@ public class Cli {
                     System.out.print("Enter password: ");
                     String loginPassword = scanner.nextLine();
                     userController.login(loginEmail, loginPassword);
-                    currentUser = new User(0, "Temp", 0, loginEmail, loginPassword);
+                    currentUser = new org.example.User(0, "Temp", 0, loginEmail, loginPassword);
                     System.out.println("Login attempted, check Firebase logs.");
                     break;
                 default :
@@ -80,7 +80,7 @@ public class Cli {
                     double price = Double.parseDouble(scanner.nextLine());
                     System.out.print("Enter expiration (yyyy-MM-dd): ");
                     LocalDate exp = LocalDate.parse(scanner.nextLine(), formatter);
-                    productController.addProduct(new Product(0, newName, price, exp));
+                    productController.addProduct(new org.example.Product(0, newName, price, exp));
                     break;
                 case 4 :
                     System.out.print("Enter product id to delete: ");
@@ -107,5 +107,5 @@ public class Cli {
         } 
     }
 
-    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.Cli.class);
+    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.logs_tp_backend_spooned.Cli.class);
 }

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.logs_tp_backend_spooned;
 import java.time.LocalDate;
 import org.slf4j.Logger;
 public class Product {
@@ -19,7 +19,7 @@ public class Product {
 
     public int getId() {
         logger.info("ACTION | userId={} | action={} | method={}", id, "READ", "getId");
-        return id;
+        return this.id;
     }
 
     public void setId(int id) {
@@ -29,7 +29,7 @@ public class Product {
 
     public String getName() {
         logger.info("ACTION | userId={} | action={} | method={}", id, "READ", "getName");
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -39,7 +39,7 @@ public class Product {
 
     public double getPrice() {
         logger.info("ACTION | userId={} | action={} | method={}", id, "READ", "getPrice");
-        return price;
+        return this.price;
     }
 
     public void setPrice(double price) {
@@ -49,7 +49,7 @@ public class Product {
 
     public LocalDate getExpiration_date() {
         logger.info("ACTION | userId={} | action={} | method={}", id, "READ", "getExpiration_date");
-        return expiration_date;
+        return this.expiration_date;
     }
 
     public void setExpiration_date(LocalDate expiration_date) {
@@ -57,5 +57,5 @@ public class Product {
         this.expiration_date = expiration_date;
     }
 
-    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.Product.class);
+    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.logs_tp_backend_spooned.Product.class);
 }
