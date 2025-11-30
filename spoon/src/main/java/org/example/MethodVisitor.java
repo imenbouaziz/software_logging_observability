@@ -20,8 +20,22 @@ public class MethodVisitor {
             if (method.getBody() != null) {
                 String action = determineAction(method.getSimpleName());
                 String methodName = method.getSimpleName();
-                String log = "logger.info(\"ACTION | userId={} | action={} | method={}\", id, \""
-                        + action + "\", \"" + methodName + "\")";
+                String log;
+                if ("UNKNOWN".equals(action)){
+                    log = "logger.info(\"ACTION UNKNOWN\")";
+                } else if ("login".equals(methodName)) {
+                    log = "logger.info(\"ACTION | userEmail={} | action={} | method={}\", email, \""
+                            + action + "\", \"" + methodName + "\")";
+
+
+                } else if ("register".equals(methodName)) {
+                    log = "logger.info(\"ACTION | user={} | action={} | method={}\", user, \""
+                            + action + "\", \"" + methodName + "\")";
+
+                } else {
+                    log = "logger.info(\"ACTION | userId={} | action={} | method={}\", userId, \""
+                            + action + "\", \"" + methodName + "\")";
+                }
                 CtCodeSnippetStatement snippet = factory.Code().createCodeSnippetStatement(log);
                 method.getBody().insertBegin(snippet);
             }
@@ -47,8 +61,8 @@ public class MethodVisitor {
         );
     }
     private String determineAction(String methodName) {
-        if(methodName.startsWith("get")|| methodName.startsWith("fetch")) return "READ";
-        if(methodName.startsWith("set") || methodName.startsWith("add") || methodName.startsWith("update") || methodName.startsWith("delete")) return "WRITE";
+        if(methodName.startsWith("fetch") || methodName.startsWith("login"))return "READ";
+        if(methodName.startsWith("add") || methodName.startsWith("update") || methodName.startsWith("delete") || methodName.startsWith("register")) return "WRITE";
         return "UNKNOWN";
     }
 }
