@@ -6,17 +6,11 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
-import java.util.regex.*;
 
 public class Parser {
-    //capt from log lines
-    private static final Pattern ACTION = Pattern.compile(
-            "ACTION\\s*\\|\\s*userId=([^\\s|]+)\\s*\\|\\s*action=([^\\s|]+)",
-            Pattern.CASE_INSENSITIVE
-    );
 
     public static void main(String[] args) throws Exception {
-        Path logPath = Paths.get("logs", "app.log");
+        Path logPath = Paths.get("/home/imene/IdeaProjects/logs_tp_backend_spooned/logs/app.log");
         Path outDir = Paths.get("profiles");
 
         if (!Files.exists(logPath)) {
@@ -32,12 +26,36 @@ public class Parser {
         try (BufferedReader br = Files.newBufferedReader(logPath)) {
             String line;
             while ((line = br.readLine()) != null) {
-                Matcher m = ACTION.matcher(line);
-                if (!m.find()) continue;
-                String userId = m.group(1);
-                String action = m.group(2).toLowerCase(Locale.ROOT);
+                if (!line.contains("ACTION")) continue;
 
-                statsByUser.computeIfAbsent(userId, k -> new Stats()).incrrement(action);
+                String[] parts = line.split("\\|");
+                Map<String, String> fields = new HashMap<>();
+
+                for (String part : parts) {
+                    part = part.trim();
+                    if (part.contains("=")) {
+                        String[] kv = part.split("=", 2);
+                        fields.put(kv[0].trim(), kv[1].trim());
+                    } else {
+                        fields.put("event", part);
+                    }
+                }
+
+                if (!fields.containsKey("userId")) continue;
+
+                String userKey = "userId:" + fields.get("userId");
+                String action = fields.getOrDefault("action", "").toLowerCase(Locale.ROOT);
+
+                Stats stats = statsByUser.computeIfAbsent(userKey, k -> new Stats());
+                stats.incrrement(action);
+
+                String expCountStr = fields.get("expensiveCount");
+                String totalExpStr = fields.get("totalExpensiveProducts");
+                if (expCountStr != null && totalExpStr != null) {
+                    int expCount = Integer.parseInt(expCountStr);
+                    int totalExp = Integer.parseInt(totalExpStr);
+                    stats.addExpensiveSearch(expCount, totalExp);
+                }
             }
         }
 
@@ -45,20 +63,22 @@ public class Parser {
 
         for (Map.Entry<String, Stats> e : statsByUser.entrySet()) {
             Map<String, Object> profile = new LinkedHashMap<>();
-            profile.put("userId", e.getKey());
+            profile.put("userKey", e.getKey());
             profile.put("UserType", e.getValue().userType());
 
             Map<String, Integer> counters = new LinkedHashMap<>();
             counters.put("reads", e.getValue().getReads());
             counters.put("writes", e.getValue().getWrites());
+            counters.put("searchedExpensive", e.getValue().getSearchedExpensive());
+            counters.put("totalExpensiveProducts", e.getValue().getTotalExpensiveProducts());
             profile.put("stats", counters);
 
-            Path out = outDir.resolve(e.getKey() + ".json");
+            Path out = outDir.resolve(e.getKey().replaceAll("[^a-zA-Z0-9]", "_") + ".json");
             try (Writer w = Files.newBufferedWriter(out)) {
                 mapper.writeValue(w, profile);
             }
         }
 
-        System.out.println("sauv to: " + outDir.toAbsolutePath());
+        System.out.println("Profiles saved to: " + outDir.toAbsolutePath());
     }
 }

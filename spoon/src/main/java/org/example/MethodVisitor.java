@@ -1,5 +1,7 @@
 package org.example;
 
+import spoon.reflect.code.CtReturn;
+import spoon.reflect.code.CtStatement;
 import spoon.reflect.declaration.CtField;
 import spoon.reflect.declaration.CtMethod;
 import spoon.reflect.declaration.CtType;
@@ -7,6 +9,10 @@ import spoon.reflect.code.CtCodeSnippetStatement;
 import spoon.reflect.declaration.ModifierKind;
 import spoon.reflect.factory.Factory;
 import spoon.reflect.reference.CtTypeReference;
+import spoon.reflect.visitor.Filter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MethodVisitor {
     private final Factory factory;
@@ -23,21 +29,33 @@ public class MethodVisitor {
                 String log;
                 if ("UNKNOWN".equals(action)){
                     log = "logger.info(\"ACTION UNKNOWN\")";
-                } else if ("login".equals(methodName)) {
-                    log = "logger.info(\"ACTION | userEmail={} | action={} | method={}\", email, \""
-                            + action + "\", \"" + methodName + "\")";
 
+                } else if (methodName.startsWith("fetch")) {
+                    log = "logger.info(\"ACTION | userId={} | action={} | method={} | expensiveCount={} | totalExpensiveProducts={}\", "
+                            + "userId, \"" + action + "\", \"" + methodName + "\", expensiveCount, 10)";
+                }
+                else{
+                    log = "logger.info(\"ACTION | userId={} | action={} | method={} \", "
+                            + "userId, \"" + action + "\", \"" + methodName + "\")";
 
-                } else if ("register".equals(methodName)) {
-                    log = "logger.info(\"ACTION | user={} | action={} | method={}\", user, \""
-                            + action + "\", \"" + methodName + "\")";
-
-                } else {
-                    log = "logger.info(\"ACTION | userId={} | action={} | method={}\", userId, \""
-                            + action + "\", \"" + methodName + "\")";
                 }
                 CtCodeSnippetStatement snippet = factory.Code().createCodeSnippetStatement(log);
-                method.getBody().insertBegin(snippet);
+
+                boolean inserted = false;
+                List<CtStatement> statements = new ArrayList<>(method.getBody().getStatements());
+                for (CtStatement stmt : statements) {
+                    if (stmt instanceof CtReturn<?>) {
+                        stmt.insertBefore(snippet);
+                        inserted = true;
+                    }
+                }
+
+                if (!inserted) {
+                    method.getBody().insertEnd(snippet);
+                }
+
+
+
             }
         }
     }
