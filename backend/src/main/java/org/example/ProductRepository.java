@@ -21,7 +21,7 @@ public class ProductRepository {
         this.productRef = FirebaseDatabase.getInstance().getReference("products");
     }
 
-    public void getProductById(int id, int userId) {
+    public void fetchProductById(int id, int userId) {
         CompletableFuture<Product> future = new CompletableFuture<>();
         productRef.child(String.valueOf(userId)).child(String.valueOf(id))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
@@ -111,7 +111,7 @@ public class ProductRepository {
                 });
     }
 
-    public CompletableFuture<List<Product>> getAllProducts(int userId) {
+    public CompletableFuture<List<Product>> fetchAllProducts(int userId) {
         CompletableFuture<List<Product>> future = new CompletableFuture<>();
         productRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override

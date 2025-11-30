@@ -14,13 +14,13 @@ public class ProductController {
     }
 
     @GetMapping
-    public List<Product> getAllProducts(@PathVariable int userId) {
-        return service.getAllProducts(userId);
+    public List<Product> fetchAllProducts(@PathVariable int userId) {
+        return service.fetchAllProducts(userId);
     }
 
     @GetMapping("/{id}")
-    public Product getProductById(@PathVariable int userId, @PathVariable int id) {
-        return service.getProductById(userId, id);
+    public Product fetchProductById(@PathVariable int userId, @PathVariable int id) {
+        return service.fetchProductById(userId, id);
     }
 
     @PostMapping

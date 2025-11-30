@@ -16,9 +16,9 @@ public class ProductService {
         this.repo = repo;
     }
 
-    public List<Product> getAllProducts(int userId) {
+    public List<Product> fetchAllProducts(int userId) {
         try {
-            return repo.getAllProducts(userId).get();
+            return repo.fetchAllProducts(userId).get();
         } catch (Exception e) {
             log.error("Error fetching products", e);
             return List.of();
@@ -26,8 +26,8 @@ public class ProductService {
     }
 
 
-    public Product getProductById(int userId, int id) {
-        repo.getProductById(userId, id);
+    public Product fetchProductById(int userId, int id) {
+        repo.fetchProductById(userId, id);
         return null;
     }
 

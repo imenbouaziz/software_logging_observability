@@ -40,7 +40,7 @@ public class UserRepository {
         });
     }
 
-    public void getUser(int id) {
+    public void fetchUser(int id) {
         userRef.child(String.valueOf(id))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -60,7 +60,7 @@ public class UserRepository {
                 });
     }
 
-    public User getUserByEmail(String email) {
+    public User fetchUserByEmail(String email) {
         userRef.orderByChild("email").equalTo(email)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
