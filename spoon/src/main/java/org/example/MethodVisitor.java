@@ -1,9 +1,12 @@
 package org.example;
 
+import spoon.reflect.declaration.CtField;
 import spoon.reflect.declaration.CtMethod;
 import spoon.reflect.declaration.CtType;
 import spoon.reflect.code.CtCodeSnippetStatement;
+import spoon.reflect.declaration.ModifierKind;
 import spoon.reflect.factory.Factory;
+import spoon.reflect.reference.CtTypeReference;
 
 public class MethodVisitor {
     private final Factory factory;
@@ -12,18 +15,36 @@ public class MethodVisitor {
     }
 
     public void visit(CtType<?> type) {
-        for(CtMethod<?> method : type.getMethods()) {
-            if(method.getBody() != null) {
+        ensureLoggerField(type);
+
+        for (CtMethod<?> method : type.getMethods()) {
+            if (method.getBody() != null) {
                 String action = determineAction(method.getSimpleName());
                 String methodName = method.getSimpleName();
-                String log = "logger.info(\"ACTION | userId={} | action=" + action + " | method=" + methodName + "\")";
+                String log = "logger.info(\"ACTION | userId={} | action={} | method={}\", userId, \""
+                        + action + "\", \"" + methodName + "\")";
                 CtCodeSnippetStatement snippet = factory.Code().createCodeSnippetStatement(log);
                 method.getBody().insertBegin(snippet);
-
             }
         }
     }
 
+    private void ensureLoggerField(CtType<?> type) {
+        if (type.getField("logger") != null) return;
+
+        var loggerType = factory.Type().createReference("org.slf4j.Logger");
+        var loggerField = factory.createField(
+                type,
+                java.util.EnumSet.of(spoon.reflect.declaration.ModifierKind.PRIVATE,
+                        spoon.reflect.declaration.ModifierKind.STATIC,
+                        spoon.reflect.declaration.ModifierKind.FINAL),
+                loggerType,
+                "logger",
+                factory.Code().createCodeSnippetExpression(
+                        "org.slf4j.LoggerFactory.getLogger(" + type.getQualifiedName() + ".class)"
+                )
+        );
+    }
     private String determineAction(String methodName) {
         if(methodName.startsWith("get")|| methodName.startsWith("fetch")) return "READ";
         if(methodName.startsWith("set") || methodName.startsWith("add") || methodName.startsWith("update") || methodName.startsWith("delete")) return "WRITE";
