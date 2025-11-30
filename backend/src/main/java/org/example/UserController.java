@@ -15,6 +15,7 @@ public class UserController {
     @PostMapping("/register")
     public void register(@RequestBody User user) throws Exception {
         service.register(user);
+        Integer userId = user.getId();
     }
 
     @PostMapping("/login")
@@ -22,6 +23,7 @@ public class UserController {
                       @RequestParam String password,
                       HttpSession session) throws Exception {
         User user = service.login(email, password);
+        Integer userId = (user != null) ? user.getId() : null;
         if (user != null) {
             System.out.println("Logged in user id = " + user.getId());
             session.setAttribute("userId", user.getId());
