@@ -4,6 +4,8 @@ import com.google.firebase.database.*;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Repository;
 
+import java.util.concurrent.CompletableFuture;
+
 @Repository
 public class UserRepository {
     private DatabaseReference userRef;
@@ -27,7 +29,7 @@ public class UserRepository {
                 long currentId = snapshot.exists() ? snapshot.getValue(Long.class) : 0;
                 long newId = currentId + 1;
                 counterRef.setValueAsync(newId);
-                user.setID((int)newId);
+                user.setId((int)newId);
                 userRef.child(String.valueOf(newId)).setValueAsync(user);
 
                 System.out.println("User registered with id: " + newId);
@@ -61,6 +63,7 @@ public class UserRepository {
     }
 
     public User getUserByEmail(String email) {
+        CompletableFuture<User> future = new CompletableFuture<>();
         userRef.orderByChild("email").equalTo(email)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -68,19 +71,25 @@ public class UserRepository {
                         if (snapshot.exists()) {
                             for (DataSnapshot child : snapshot.getChildren()) {
                                 User user = child.getValue(User.class);
-                                System.out.println("Found user: " + user.getName());
+                                //setting the id properly
+                                user.setId(Integer.parseInt(child.getKey()));
+                                future.complete(user);
                                 return;
                             }
-                        } else {
-                            System.out.println("No user found with email: " + email);
                         }
+                        future.complete(null);
                     }
-
                     @Override
                     public void onCancelled(DatabaseError error) {
-                        System.err.println("Error: " + error.getMessage());
+                        future.completeExceptionally(new RuntimeException(error.getMessage()));
                     }
                 });
-        return null;
+
+        try {
+            return future.get(); //blocking firebase responses
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
+
 }

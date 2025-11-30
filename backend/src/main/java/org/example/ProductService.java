@@ -39,7 +39,7 @@ public class ProductService {
         repo.deleteProduct(userId, id);
     }
 
-    public void updateProduct(int userId, int id, String name, double price, LocalDate expiration_date) {
+    public void updateProduct(int userId, int id, String name, double price, String expiration_date) {
         repo.updateProduct(userId, id, name, price, expiration_date);
     }
 }

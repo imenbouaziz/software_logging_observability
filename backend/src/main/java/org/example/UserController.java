@@ -1,5 +1,6 @@
 package org.example;
 
+import jakarta.servlet.http.HttpSession;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -18,7 +19,15 @@ public class UserController {
 
     @PostMapping("/login")
     public User login(@RequestParam String email,
-                      @RequestParam String password) throws Exception {
-        return service.login(email, password);
+                      @RequestParam String password,
+                      HttpSession session) throws Exception {
+        User user = service.login(email, password);
+        if (user != null) {
+            System.out.println("Logged in user id = " + user.getId());
+            session.setAttribute("userId", user.getId());
+        }
+        return user;
     }
+
+
 }

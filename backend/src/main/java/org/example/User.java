@@ -5,15 +5,17 @@ import java.util.List;
 
 public class User {
 
-    private int ID;
+    private Integer id;
     private String name;
     private int age;
     private String email;
     private String password;
     private List<Product> products;
 
-    public User(int ID, String name, int age, String email, String password,  List<Product> products) {
-        this.ID = ID;
+    public User() {}
+
+    public User(Integer id, String name, int age, String email, String password,  List<Product> products) {
+        this.id = id;
         this.name = name;
         this.age = age;
 
@@ -23,11 +25,11 @@ public class User {
 
     }
 
-    public int getID() {
-        return ID;
+    public Integer getId() {
+        return id;
     }
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setId(Integer id) {
+        this.id = id;
     }
     public String getName() {
         return name;

@@ -1,53 +1,34 @@
 package org.example;
 
-import java.time.LocalDate;
-import java.util.Date;
-
 public class Product {
-
-    private int id;
+    private Integer id;
+    private Integer userId;        //Ineger bcs of some errors in firebase
     private String name;
-    private double price;
-    private LocalDate expiration_date;
-    private int userID;
+    private Double price;
+    private String expiration_date;
 
-    public Product(int id, String name, double price, LocalDate expiration_date) {
+    public Product() {} //for fb
+
+    public Product(Integer id, Integer userId, String name, Double price, String expiration_date) {
         this.id = id;
+        this.userId = userId;
         this.name = name;
         this.price = price;
         this.expiration_date = expiration_date;
-
     }
 
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public double getPrice() {
-        return price;
-    }
-    public void setPrice(double price) {
-        this.price = price;
-    }
-    public LocalDate getExpiration_date() {
-        return expiration_date;
-    }
-    public void setExpiration_date(LocalDate expiration_date) {
-        this.expiration_date = expiration_date;
+    public Integer getId() { return id; }
+    public void setId(Integer id) { this.id = id; }
 
-    }
-    public int getUserID() {
-        return userID;
-    }
-    public void setUserID(int userID) {
-        this.userID = userID;
-    }
+    public Integer getUserId() { return userId; }
+    public void setUserId(Integer userId) { this.userId = userId; }
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+
+    public Double getPrice() { return price; }
+    public void setPrice(Double price) { this.price = price; }
+
+    public String getExpirationDate() { return expiration_date; }
+    public void setExpirationDate(String expirationDate) { this.expiration_date = expirationDate; }
 }
