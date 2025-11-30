@@ -21,8 +21,9 @@ public class ProductRepository {
         this.productRef = FirebaseDatabase.getInstance().getReference("products");
     }
 
-    public void getProductById(int id) {
-        productRef.child(String.valueOf(id))
+    public void getProductById(int id, int userId) {
+        CompletableFuture<Product> future = new CompletableFuture<>();
+        productRef.child(String.valueOf(userId)).child(String.valueOf(id))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot snapshot) {
@@ -41,8 +42,8 @@ public class ProductRepository {
                 });
     }
 
-    public void addProduct(Product product) {
-        DatabaseReference counterRef = FirebaseDatabase.getInstance().getReference("counters/products");
+    public void addProduct(int userId, Product product) {
+        DatabaseReference counterRef = FirebaseDatabase.getInstance().getReference("counters/products" + userId);
 
         counterRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -51,9 +52,9 @@ public class ProductRepository {
                 long newId = currentId + 1;
                 counterRef.setValueAsync(newId);
                 product.setId((int)newId);
-                productRef.child(String.valueOf(newId)).setValueAsync(product);
+                productRef.child(String.valueOf(userId)).child(String.valueOf(newId)).setValueAsync(product);
 
-                System.out.println("Product added with id: " + newId);
+                System.out.println("Product added with id: " + newId + " =for user" + userId);
             }
 
             @Override
@@ -64,15 +65,15 @@ public class ProductRepository {
     }
 
 
-    public void deleteProduct(int id) {
-        productRef.child(String.valueOf(id))
+    public void deleteProduct(int  userId, int id) {
+        productRef.child(String.valueOf(userId)).child(String.valueOf(id))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot snapshot) {
                         if (!snapshot.exists()) {
                             System.out.println("Product not found");
                         } else {
-                            productRef.child(String.valueOf(id)).removeValueAsync();
+                            productRef.child(String.valueOf(userId)).child(String.valueOf(id)).removeValueAsync();
                             System.out.println("Product deleted");
                         }
                     }
@@ -84,8 +85,8 @@ public class ProductRepository {
                 });
     }
 
-    public void updateProduct(int id, String name, double price, LocalDate expiration_date) {
-        productRef.child(String.valueOf(id))
+    public void updateProduct(int userId,  int id, String name, double price, LocalDate expiration_date) {
+        productRef.child(String.valueOf(userId)).child(String.valueOf(id))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot snapshot) {
@@ -97,7 +98,7 @@ public class ProductRepository {
                                 existing.setName(name);
                                 existing.setPrice(price);
                                 existing.setExpiration_date(expiration_date);
-                                productRef.child(String.valueOf(id)).setValueAsync(existing);
+                                productRef.child(String.valueOf(userId)).child(String.valueOf(id)).setValueAsync(existing);
                                 System.out.println("Product updated");
                             }
                         }
@@ -110,7 +111,7 @@ public class ProductRepository {
                 });
     }
 
-    public CompletableFuture<List<Product>> getAllProducts() {
+    public CompletableFuture<List<Product>> getAllProducts(int userId) {
         CompletableFuture<List<Product>> future = new CompletableFuture<>();
         productRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override

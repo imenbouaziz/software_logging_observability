@@ -16,9 +16,9 @@ public class ProductService {
         this.repo = repo;
     }
 
-    public List<Product> getAllProducts() {
+    public List<Product> getAllProducts(int userId) {
         try {
-            return repo.getAllProducts().get(); // block until Firebase returns
+            return repo.getAllProducts(userId).get();
         } catch (Exception e) {
             log.error("Error fetching products", e);
             return List.of();
@@ -26,20 +26,20 @@ public class ProductService {
     }
 
 
-    public Product getProductById(int id) {
-        repo.getProductById(id);
+    public Product getProductById(int userId, int id) {
+        repo.getProductById(userId, id);
         return null;
     }
 
-    public void addProduct(Product product) {
-        repo.addProduct(product);
+    public void addProduct(int userId, Product product) {
+        repo.addProduct( userId,product);
     }
 
-    public void deleteProduct(int id) {
-        repo.deleteProduct(id);
+    public void deleteProduct(int userId, int id) {
+        repo.deleteProduct(userId, id);
     }
 
-    public void updateProduct(int id, String name, double price, LocalDate expiration_date) {
-        repo.updateProduct(id, name, price, expiration_date);
+    public void updateProduct(int userId, int id, String name, double price, LocalDate expiration_date) {
+        repo.updateProduct(userId, id, name, price, expiration_date);
     }
 }

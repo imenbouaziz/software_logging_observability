@@ -9,6 +9,7 @@ public class Product {
     private String name;
     private double price;
     private LocalDate expiration_date;
+    private int userID;
 
     public Product(int id, String name, double price, LocalDate expiration_date) {
         this.id = id;
@@ -41,5 +42,12 @@ public class Product {
     }
     public void setExpiration_date(LocalDate expiration_date) {
         this.expiration_date = expiration_date;
+
+    }
+    public int getUserID() {
+        return userID;
+    }
+    public void setUserID(int userID) {
+        this.userID = userID;
     }
 }

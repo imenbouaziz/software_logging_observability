@@ -1,6 +1,8 @@
 package org.example;
 
 
+import java.util.List;
+
 public class User {
 
     private int ID;
@@ -8,14 +10,16 @@ public class User {
     private int age;
     private String email;
     private String password;
+    private List<Product> products;
 
-    public User(int ID, String name, int age, String email, String password) {
+    public User(int ID, String name, int age, String email, String password,  List<Product> products) {
         this.ID = ID;
         this.name = name;
         this.age = age;
 
         this.email = email;
         this.password = password;
+        this.products = products;
 
     }
 
@@ -48,6 +52,12 @@ public class User {
     }
     public void setPassword(String password) {
         this.password = password;
+    }
+    public List<Product> getProducts() {
+        return products;
+    }
+    public void setProducts(List<Product> products) {
+        this.products = products;
     }
 
 }

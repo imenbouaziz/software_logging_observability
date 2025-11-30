@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/users/{userId}/products")
 public class ProductController {
     private final ProductService service;
 
@@ -14,29 +14,32 @@ public class ProductController {
     }
 
     @GetMapping
-    public List<Product> getAllProducts() {
-        return service.getAllProducts();
+    public List<Product> getAllProducts(@PathVariable int userId) {
+        return service.getAllProducts(userId);
     }
 
     @GetMapping("/{id}")
-    public Product getProductById(@PathVariable int id) {
-        return service.getProductById(id);
+    public Product getProductById(@PathVariable int userId, @PathVariable int id) {
+        return service.getProductById(userId, id);
     }
 
     @PostMapping
-    public void addProduct(@RequestBody Product product) {
-        service.addProduct(product);
+    public void addProduct(@PathVariable int userId, @RequestBody Product product) {
+        service.addProduct(userId, product);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteProduct(@PathVariable int id) {
-        service.deleteProduct(id);
+    public void deleteProduct(@PathVariable int userId, @PathVariable int id) {
+        service.deleteProduct(userId, id);
     }
+
+    // Update product for a user
     @PutMapping("/{id}")
-    public void updateProduct(@PathVariable int id,
+    public void updateProduct(@PathVariable int userId,
+                              @PathVariable int id,
                               @RequestParam String name,
                               @RequestParam double price,
                               @RequestParam LocalDate expiration_date) {
-        service.updateProduct(id, name, price, expiration_date);
+        service.updateProduct(userId, id, name, price, expiration_date);
     }
 }

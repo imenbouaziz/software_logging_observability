@@ -60,7 +60,7 @@ public class UserRepository {
                 });
     }
 
-    public void getUserByEmail(String email) {
+    public User getUserByEmail(String email) {
         userRef.orderByChild("email").equalTo(email)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -81,5 +81,6 @@ public class UserRepository {
                         System.err.println("Error: " + error.getMessage());
                     }
                 });
+        return null;
     }
 }

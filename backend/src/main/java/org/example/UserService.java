@@ -19,7 +19,10 @@ public class UserService {
     }
 
     public User authenticate(String email, String password) {
-        repo.getUserByEmail(email);
+        User user = repo.getUserByEmail(email);
+        if (user != null && user.getPassword().equals(password)) {
+            return user;
+        }
         return null;
     }
 }
