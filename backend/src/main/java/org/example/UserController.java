@@ -19,6 +19,6 @@ public class UserController {
     @PostMapping("/login")
     public User login(@RequestParam String email,
                       @RequestParam String password) throws Exception {
-        return service.authenticate(email, password);
+        return service.login(email, password);
     }
 }

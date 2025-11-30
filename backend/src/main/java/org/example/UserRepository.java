@@ -18,7 +18,7 @@ public class UserRepository {
     }
 
 
-    public void addUser(User user) {
+    public void registerUser(User user) {
         DatabaseReference counterRef = FirebaseDatabase.getInstance().getReference("counters/users");
 
         counterRef.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -40,7 +40,7 @@ public class UserRepository {
         });
     }
 
-    public void fetchUser(int id) {
+    public void getUser(int id) {
         userRef.child(String.valueOf(id))
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -60,7 +60,7 @@ public class UserRepository {
                 });
     }
 
-    public User fetchUserByEmail(String email) {
+    public User getUserByEmail(String email) {
         userRef.orderByChild("email").equalTo(email)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override

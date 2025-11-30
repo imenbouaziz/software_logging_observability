@@ -14,12 +14,12 @@ public class UserService {
     }
 
     public void register(User user) {
-        repo.fetchUserByEmail(user.getEmail());
-        repo.addUser(user);
+        repo.getUserByEmail(user.getEmail());
+        repo.registerUser(user);
     }
 
-    public User authenticate(String email, String password) {
-        User user = repo.fetchUserByEmail(email);
+    public User login(String email, String password) {
+        User user = repo.getUserByEmail(email);
         if (user != null && user.getPassword().equals(password)) {
             return user;
         }
