@@ -1,8 +1,10 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+
 import jakarta.servlet.http.HttpSession;
-import org.example.ProductService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
@@ -18,7 +20,6 @@ public class ProductController {
 
     private void ensureLoggedIn(HttpSession session, int userId) {
         Object sessionUserId = session.getAttribute("userId");
-        //just making sure the user id is fetched properly when logged in a session
         System.out.println("Session userId = " + sessionUserId + " | Path userId = " + userId);
 
         if (sessionUserId == null || !(sessionUserId instanceof Integer) || !sessionUserId.equals(userId)) {
@@ -26,11 +27,20 @@ public class ProductController {
         }
     }
 
-
     @GetMapping
     public List<Product> fetchAllProducts(@PathVariable int userId, HttpSession session) {
         ensureLoggedIn(session, userId);
-        return service.fetchAllProducts(userId);
+
+        List<Product> products = service.fetchAllProducts(userId);
+
+        Set<Integer> top = service.topExpensiveProductIds();
+        int expensiveCount = (int) products.stream()
+                .filter(p -> top.contains(p.getId()))
+                .count();
+
+       // System.out.println("User " + userId + " searched " + expensiveCount + " expensive products");
+
+        return products;
     }
 
     @GetMapping("/{id}")
@@ -38,7 +48,17 @@ public class ProductController {
                                     @PathVariable int id,
                                     HttpSession session) {
         ensureLoggedIn(session, userId);
-        return service.fetchProductById(userId, id);
+
+        Product product = service.fetchProductById(userId, id);
+        Set<Integer> top = service.topExpensiveProductIds();
+        boolean isExpensive = (product != null && top.contains(product.getId()));
+        int expensiveCount = 0;
+        if (isExpensive) {
+            expensiveCount += 1;
+          //  System.out.println("User " + userId + " searched for an expensive product with id " + product.getId());
+        }
+
+        return product;
     }
 
     @PostMapping
@@ -67,4 +87,36 @@ public class ProductController {
         ensureLoggedIn(session, userId);
         service.updateProduct(userId, id, name, price, expiration_date);
     }
+
+    @GetMapping("/global")
+    public List<Product> fetchAllProductsGlobal(@PathVariable int userId, HttpSession session) {
+        ensureLoggedIn(session, userId);
+
+        List<Product> products = service.fetchAllProductsGlobal(userId);
+        Set<Integer> top = service.topExpensiveProductIds();
+        int expensiveCount = (int) products.stream()
+                .filter(p -> top.contains(p.getId()))
+                .count();
+
+        //System.out.println("User " + userId + " searched " + expensiveCount + " expensive products globally");
+
+        return products;
+    }
+
+    @GetMapping("/global/name/{name}")
+    public Product fetchProductByNameGlobal(@PathVariable int userId,
+                                            @PathVariable String name,
+                                            HttpSession session) {
+        ensureLoggedIn(session, userId);
+
+        Product product = service.fetchProductByNameGlobal(userId, name);
+        Set<Integer> top = service.topExpensiveProductIds();
+        boolean isExpensive = (product != null && top.contains(product.getId()));
+        int expensiveCount = 0;
+        if (isExpensive) {
+            expensiveCount += 1;
+        }
+        return product;
+    }
 }
+
