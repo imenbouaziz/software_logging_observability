@@ -2,7 +2,7 @@ package org.example;
 
 import jakarta.servlet.http.HttpSession;
 import org.springframework.web.bind.annotation.*;
-
+@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true", maxAge = 3600)
 @RestController
 @RequestMapping("/users")
 public class UserController {
