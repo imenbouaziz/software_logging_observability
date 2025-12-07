@@ -6,6 +6,9 @@ import RegisterPage from './pages/RegisterPage';
 import ProductDashboard from './pages/ProductDashboard';
 import './App.css';
 
+import './OpenTelemetry';
+import { logInfo, logError, logDebug } from './loggers';
+
 const API_BASE = 'http://localhost:8080';
 
 export default function App() {
@@ -15,26 +18,38 @@ export default function App() {
 
   useEffect(() => {
     const checkSession = async () => {
+      logInfo('Checking user session');
+
       try {
         const response = await fetch(`${API_BASE}/users/login`, {
           credentials: 'include',
           method: 'POST',
         });
+
+        logDebug('Session check status', { status: response.status });
+
         if (response.ok) {
           const user = await response.json();
+          logInfo('Session active', { id: user.id, email: user.email });
           setCurrentUser(user);
           setCurrentPage('dashboard');
+        } else {
+          logInfo('No active session');
         }
       } catch (err) {
-        console.log('No active session');
+        logError('ERROR checking session', err);
       } finally {
         setLoading(false);
+        logDebug('Session check completed');
       }
     };
+
     checkSession();
   }, []);
 
   if (loading) {
+    logDebug('App loading UI displayed');
+
     return (
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh">
         <CircularProgress />
@@ -43,59 +58,58 @@ export default function App() {
   }
 
   const handleLoginSuccess = (user) => {
-    console.log('User logged in:', user);
+    logInfo('User logged in', { id: user.id, email: user.email });
     setCurrentUser(user);
     setCurrentPage('dashboard');
   };
 
   const handleLogout = () => {
+    logInfo('User logout', {
+      id: currentUser?.id,
+      email: currentUser?.email,
+    });
     setCurrentUser(null);
     setCurrentPage('login');
   };
 
   const navigateTo = (page) => {
+    logInfo('Navigate page', { page });
     setCurrentPage(page);
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%', width: '100%', bgcolor: '#f5f5f5' }}>
+    <Box sx={{ height: "100%", width: "100%", bgcolor: "#f5f5f5", display: "flex", flexDirection: "column" }}>
+
       {currentUser && currentPage !== 'login' && currentPage !== 'register' && (
-        <AppBar position="static" sx={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
+        <AppBar position="static" sx={{ background: "linear-gradient(135deg,#667eea,#764ba2)" }}>
           <Toolbar>
+
             <Button
               onClick={() => navigateTo('dashboard')}
-              sx={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 1,
-                color: 'white',
-                textTransform: 'none',
-                fontSize: '1.25rem',
-                fontWeight: 'bold',
-                '&:hover': { opacity: 0.8 },
-              }}
+              sx={{ color: "white", gap: 1, fontSize: "1.25rem", fontWeight: "bold" }}
             >
-              <Home size={28} /> Product Manager
+              <Home size={26} /> Product Manager
             </Button>
-            <Box sx={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 2 }}>
-              <Typography sx={{ color: 'white' }}>
+
+            <Box sx={{ ml: "auto", display: "flex", gap: 2, alignItems: "center" }}>
+              <Typography sx={{ color: "white" }}>
                 Welcome, {currentUser.name || currentUser.email}
               </Typography>
+
               <Button
                 onClick={handleLogout}
                 sx={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 0.5,
-                  color: 'white',
-                  backgroundColor: 'rgba(255,255,255,0.1)',
-                  '&:hover': { backgroundColor: 'rgba(255,255,255,0.2)' },
-                  textTransform: 'none',
+                  color: "white",
+                  gap: 1,
+                  textTransform: "none",
+                  backgroundColor: "rgba(255,255,255,0.15)",
+                  "&:hover": { background: "rgba(255,255,255,0.25)" }
                 }}
               >
                 <LogOut size={18} /> Logout
               </Button>
             </Box>
+
           </Toolbar>
         </AppBar>
       )}
@@ -107,16 +121,19 @@ export default function App() {
             onSwitchToRegister={() => navigateTo('register')}
           />
         )}
+
         {currentPage === 'register' && (
           <RegisterPage
             onRegisterSuccess={() => navigateTo('login')}
             onSwitchToLogin={() => navigateTo('login')}
           />
         )}
+
         {currentPage === 'dashboard' && currentUser && (
           <ProductDashboard user={currentUser} />
         )}
       </Box>
+
     </Box>
   );
 }
