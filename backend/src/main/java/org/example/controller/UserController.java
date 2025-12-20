@@ -1,6 +1,8 @@
-package org.example;
+package org.example.controller;
 
 import jakarta.servlet.http.HttpSession;
+import org.example.service.UserService;
+import org.example.model.User;
 import org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true", maxAge = 3600)
 @RestController

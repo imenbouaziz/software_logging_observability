@@ -1,10 +1,11 @@
-package org.example;
+package org.example.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
 import jakarta.servlet.http.HttpSession;
+import org.example.service.ProductService;
+import org.example.model.Product;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;

@@ -1,7 +1,8 @@
-package org.example;
+package org.example.repository;
 
 import com.google.firebase.database.*;
 import jakarta.annotation.PostConstruct;
+import org.example.model.User;
 import org.springframework.stereotype.Repository;
 
 import java.util.concurrent.CompletableFuture;

@@ -1,12 +1,11 @@
-package org.example;
+package org.example.repository;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
-import org.slf4j.Logger;
+import org.example.model.Product;
 import com.google.firebase.database.*;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Repository;
