@@ -287,47 +287,11 @@ npm run dev
 3. Click on any trace to see detailed timeline
 
 
-**Span Details:**
-- Duration (milliseconds)
-- HTTP status code
-- Request/response headers
-- Custom events from loggers
-- Error information (if any)
-
 **End-to-End Traces:**
 - Single trace ID spanning both frontend and backend
 - Complete request flow visualization
 - Parent-child span relationships
 
----
-
-### Custom Logger Integration
-
-#### Frontend Custom Loggers
-
-**Location:** `frontend/src/utils/logger.js`
-
-**Available Functions:**
-```javascript
-logInfo(message, data)   // Info-level events
-logError(message, error) // Error tracking
-logDebug(message, data)  // Debug information
-```
-
-**How They Work:**
-1. Log to browser console
-2. Get active OpenTelemetry span
-3. Add event to span with level and metadata
-
-
-**Result in Zipkin:**
-Each span shows attached events:
-```
-Span: fetch POST /users/login
-  Events:
-    - [INFO] User attempting login {email: "user@example.com"}
-    - [INFO] Login successful {userId: "123"}
-```
 
 ---
 
