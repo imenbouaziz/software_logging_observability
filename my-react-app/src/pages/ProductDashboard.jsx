@@ -166,7 +166,7 @@ export default function ProductDashboard({ user }) {
     const params = new URLSearchParams({
       name: formData.name,
       price: parseFloat(formData.price),
-      expiration_date: formData.expirationDate, // 👈 MUST MATCH
+      expiration_date: formData.expirationDate, 
     });
 
     const response = await fetch(
