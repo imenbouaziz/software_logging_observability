@@ -319,22 +319,6 @@ logDebug(message, data)  // Debug information
 2. Get active OpenTelemetry span
 3. Add event to span with level and metadata
 
-**Example Usage:**
-```javascript
-import { logInfo, logError } from './utils/logger';
-
-// In your component
-const handleLogin = async () => {
-  logInfo('User attempting login', { email: userEmail });
-  
-  try {
-    const response = await fetch('/users/login', {/*...*/});
-    logInfo('Login successful', { userId: response.userId });
-  } catch (error) {
-    logError('Login failed', error);
-  }
-};
-```
 
 **Result in Zipkin:**
 Each span shows attached events:
