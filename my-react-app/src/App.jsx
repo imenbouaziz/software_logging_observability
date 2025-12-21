@@ -17,34 +17,16 @@ export default function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const checkSession = async () => {
-      logInfo('Checking user session');
+    const savedUser = localStorage.getItem("currentUser");
 
-      try {
-        const response = await fetch(`${API_BASE}/users/login`, {
-          credentials: 'include',
-          method: 'POST',
-        });
+    if (savedUser) {
+      const user = JSON.parse(savedUser);
+      logInfo("Restored user from localStorage", user);
+      setCurrentUser(user);
+      setCurrentPage("dashboard");
+    }
 
-        logDebug('Session check status', { status: response.status });
-
-        if (response.ok) {
-          const user = await response.json();
-          logInfo('Session active', { id: user.id, email: user.email });
-          setCurrentUser(user);
-          setCurrentPage('dashboard');
-        } else {
-          logInfo('No active session');
-        }
-      } catch (err) {
-        logError('ERROR checking session', err);
-      } finally {
-        setLoading(false);
-        logDebug('Session check completed');
-      }
-    };
-
-    checkSession();
+    setLoading(false);
   }, []);
 
   if (loading) {
@@ -57,17 +39,25 @@ export default function App() {
     );
   }
 
+  //Save user in localStorage on login
   const handleLoginSuccess = (user) => {
     logInfo('User logged in', { id: user.id, email: user.email });
+
+    localStorage.setItem("currentUser", JSON.stringify(user));
+
     setCurrentUser(user);
     setCurrentPage('dashboard');
   };
 
+  //Clear localStorage on logout
   const handleLogout = () => {
     logInfo('User logout', {
       id: currentUser?.id,
       email: currentUser?.email,
     });
+
+    localStorage.removeItem("currentUser");
+
     setCurrentUser(null);
     setCurrentPage('login');
   };

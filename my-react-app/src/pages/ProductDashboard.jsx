@@ -26,7 +26,7 @@ export default function ProductDashboard({ user }) {
   const [formData, setFormData] = useState({
     name: '',
     price: '',
-    expiration_date: '',
+    expirationDate: '',
   });
 
   useEffect(() => {
@@ -60,8 +60,8 @@ export default function ProductDashboard({ user }) {
         throw new Error(`Failed to fetch products: ${response.status}`);
       }
       const data = await response.json();
-      console.log('Products loaded:', data);
-      setProducts(Array.isArray(data) ? data : []);
+      setProducts(Array.isArray(data) ? data : [data]);
+
     } catch (err) {
       console.error('Fetch error:', err.message);
       alert(
@@ -74,34 +74,36 @@ export default function ProductDashboard({ user }) {
   };
 
   const handleSearch = async () => {
-    if (!searchTerm.trim()) {
-      fetchProducts();
-      return;
-    }
+  if (!searchTerm.trim()) {
+    fetchProducts();
+    return;
+  }
 
-    setLoading(true);
-    try {
-      const endpoint =
-        searchFilter === 'global'
-          ? `/users/${user.id}/products/global/name/${encodeURIComponent(searchTerm)}`
-          : `/users/${user.id}/products`;
+  setLoading(true);
+  try {
+    const endpoint =
+      searchFilter === 'global'
+        ? `/users/${user.id}/products/global/name/${encodeURIComponent(searchTerm)}`
+        : `/users/${user.id}/products/name/${encodeURIComponent(searchTerm)}`;
 
-      const response = await fetch(`${API_BASE}${endpoint}`, {
-        credentials: 'include',
-      });
+    const response = await fetch(`${API_BASE}${endpoint}`, {
+      credentials: 'include',
+    });
 
-      if (!response.ok) throw new Error('Product not found');
-      const data = await response.json();
-      setProducts(data ? [data] : []);
-    } catch (err) {
-      setProducts([]);
-    } finally {
-      setLoading(false);
-    }
-  };
+    if (!response.ok) throw new Error('Product not found');
+
+    const data = await response.json();
+    setProducts(Array.isArray(data) ? data : [data]);
+  } catch (err) {
+    console.error(err);
+    setProducts([]);
+  } finally {
+    setLoading(false);
+  }
+};
 
   const handleAddProduct = async () => {
-    if (!formData.name || !formData.price || !formData.expiration_date) {
+    if (!formData.name || !formData.price || !formData.expirationDate) {
       alert('Please fill in all fields');
       return;
     }
@@ -118,12 +120,12 @@ export default function ProductDashboard({ user }) {
         body: JSON.stringify({
           name: formData.name,
           price: parseFloat(formData.price),
-          expiration_date: formData.expiration_date,
+          expirationDate: formData.expirationDate,
         }),
       });
 
       if (!response.ok) throw new Error('Failed to add product');
-      setFormData({ name: '', price: '', expiration_date: '' });
+      setFormData({ name: '', price: '', expirationDate: '' });
       setShowAddForm(false);
       fetchProducts();
     } catch (err) {
@@ -155,44 +157,47 @@ export default function ProductDashboard({ user }) {
   };
 
   const handleUpdateProduct = async () => {
-    if (!formData.name || !formData.price || !formData.expiration_date) {
-      alert('Please fill in all fields');
-      return;
+  if (!formData.name || !formData.price || !formData.expirationDate) {
+    alert('Please fill in all fields');
+    return;
+  }
+
+  try {
+    const params = new URLSearchParams({
+      name: formData.name,
+      price: parseFloat(formData.price),
+      expiration_date: formData.expirationDate, // 👈 MUST MATCH
+    });
+
+    const response = await fetch(
+      `${API_BASE}/users/${user.id}/products/${editingId}?${params.toString()}`,
+      {
+        method: 'PUT',
+        credentials: 'include',
+        headers: {
+          'X-User-ID': String(user.id),
+          'Authorization': `Bearer ${user.id}`,
+        },
+      }
+    );
+
+    if (!response.ok) {
+      const text = await response.text();
+      throw new Error(text);
     }
 
-    try {
-      const params = new URLSearchParams({
-        name: formData.name,
-        price: parseFloat(formData.price),
-        expiration_date: formData.expiration_date,
-      });
+    setEditingId(null);
+    setFormData({ name: '', price: '', expirationDate: '' });
+    fetchProducts();
+  } catch (err) {
+    console.error(err);
+    alert('Error updating product: ' + err.message);
+  }
+};
 
-      const response = await fetch(
-        `${API_BASE}/users/${user.id}/products/${editingId}?${params.toString()}`,
-        {
-          method: 'PUT',
-          credentials: 'include',
-          headers: {
-            'Content-Type': 'application/json',
-            'X-User-ID': String(user.id),
-            'Authorization': `Bearer ${user.id}`,
-          },
-        }
-      );
 
-      if (!response.ok) throw new Error('Failed to update product');
-      setEditingId(null);
-      setFormData({ name: '', price: '', expiration_date: '' });
-      fetchProducts();
-    } catch (err) {
-      console.error(err);
-      alert('Error updating product: ' + err.message);
-    }
-  };
 
-  const filteredProducts = products.filter((p) =>
-    p.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredProducts = products;
 
   return (
     <Box sx={{ py: 4, bgcolor: '#f5f5f5', height: '100%', width: '100%', overflow: 'auto' }}>
@@ -270,9 +275,9 @@ export default function ProductDashboard({ user }) {
                 <TextField
                   type="date"
                   label="Expiration Date"
-                  value={formData.expiration_date}
+                  value={formData.expirationDate}
                   onChange={(e) =>
-                    setFormData({ ...formData, expiration_date: e.target.value })
+                    setFormData({ ...formData, expirationDate: e.target.value })
                   }
                   fullWidth
                   margin="normal"
@@ -340,7 +345,7 @@ export default function ProductDashboard({ user }) {
                     Price: ${parseFloat(product.price).toFixed(2)}
                   </Typography>
                   <Typography variant="body2" sx={{ color: 'gray', mb: 2 }}>
-                    Expires: {product.expiration_date}
+                    Expires: {product.expirationDate}
                   </Typography>
 
                   <Box sx={{ display: 'flex', gap: 1 }}>
@@ -350,7 +355,7 @@ export default function ProductDashboard({ user }) {
                         setFormData({
                           name: product.name,
                           price: product.price,
-                          expiration_date: product.expiration_date,
+                          expirationDate: product.expirationDate,
                         });
                       }}
                       variant="contained"
@@ -417,9 +422,9 @@ export default function ProductDashboard({ user }) {
             <TextField
               type="date"
               label="Expiration Date"
-              value={formData.expiration_date}
+              value={formData.expirationDate}
               onChange={(e) =>
-                setFormData({ ...formData, expiration_date: e.target.value })
+                setFormData({ ...formData, expirationDate: e.target.value })
               }
               fullWidth
               margin="normal"
