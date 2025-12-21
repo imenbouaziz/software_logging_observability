@@ -7,10 +7,17 @@ public class ParserLps {
 
     public static Lps parse(String line) {
         Map<String, String> fields = extractFields(line);
-
+        String event = line.contains("ACTION") ? "ACTION" : null;
+        String timestamp = null;
+        if (line.length() > 0) {
+            int spaceIndex = line.indexOf(" ");
+            if (spaceIndex > 0) {
+                timestamp = line.substring(0, spaceIndex);
+            }
+        }
         return new LpsBuilder()
-                .timestamp(fields.get("timestamp"))
-                .event(fields.get("Event"))
+                .timestamp(timestamp)
+                .event(event)
                 .userId(fields.get("userId"))
                 .action(fields.get("action"))
                 .method(fields.get("method"))
