@@ -1,0 +1,910 @@
+2025-12-21T20:59:38.305+01:00  INFO 148369 --- [main] o.example.logs_tp_backend_spooned.Main   : Starting Main using Java 21.0.9 with PID 148369 (/home/imene/IdeaProjects/logs_tp_backend_spooned/target/classes started by imene in /home/imene/IdeaProjects/logs_tp_backend_spooned)
+2025-12-21T20:59:38.307+01:00  INFO 148369 --- [main] o.example.logs_tp_backend_spooned.Main   : No active profile set, falling back to 1 default profile: "default"
+2025-12-21T20:59:39.110+01:00  INFO 148369 --- [main] o.example.logs_tp_backend_spooned.Main   : Started Main in 1.073 seconds (process running for 1.451)
+2025-12-21T21:00:17.788+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:00:17.836+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.UserController          : ACTION | userId=1 | action=READ | method=login 
+2025-12-21T21:00:17.866+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:17.867+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=1 | action=WRITE | method=addProduct 
+2025-12-21T21:00:17.880+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:17.881+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=1 | action=WRITE | method=addProduct 
+2025-12-21T21:00:17.894+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:17.895+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=1 | action=WRITE | method=addProduct 
+2025-12-21T21:00:17.907+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:17.907+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=1 | action=WRITE | method=addProduct 
+2025-12-21T21:00:17.918+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:17.918+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=1 | action=WRITE | method=addProduct 
+2025-12-21T21:00:17.956+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:00:17.993+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.UserController          : ACTION | userId=2 | action=READ | method=login 
+2025-12-21T21:00:18.007+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.008+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.020+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.020+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.036+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.036+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.047+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.048+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.061+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.061+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.095+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:00:18.129+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.UserController          : ACTION | userId=3 | action=READ | method=login 
+2025-12-21T21:00:18.143+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.143+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=3 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.154+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.154+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=3 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.167+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.168+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=3 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.181+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.181+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=3 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.195+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.195+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=3 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.234+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:00:18.276+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.UserController          : ACTION | userId=4 | action=READ | method=login 
+2025-12-21T21:00:18.289+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.290+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.304+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.305+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.316+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.317+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.329+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.329+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.342+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.342+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.375+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:00:18.411+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.UserController          : ACTION | userId=5 | action=READ | method=login 
+2025-12-21T21:00:18.425+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.425+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.438+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.439+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.451+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.451+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.464+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.464+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.476+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.476+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.513+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:00:18.548+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.UserController          : ACTION | userId=6 | action=READ | method=login 
+2025-12-21T21:00:18.561+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.562+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=6 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.573+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.573+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=6 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.585+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.586+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=6 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.598+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.599+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=6 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.611+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.612+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=6 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.646+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:00:18.680+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.UserController          : ACTION | userId=7 | action=READ | method=login 
+2025-12-21T21:00:18.695+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.695+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.708+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.709+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.720+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.721+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.733+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.734+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.745+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.745+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.780+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:00:18.814+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.UserController          : ACTION | userId=8 | action=READ | method=login 
+2025-12-21T21:00:18.827+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.828+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.841+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.842+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.853+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.853+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.866+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.866+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.879+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.879+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.920+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:00:18.953+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.UserController          : ACTION | userId=9 | action=READ | method=login 
+2025-12-21T21:00:18.967+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.967+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=9 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.979+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.979+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=9 | action=WRITE | method=addProduct 
+2025-12-21T21:00:18.991+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:18.991+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=9 | action=WRITE | method=addProduct 
+2025-12-21T21:00:19.002+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.002+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=9 | action=WRITE | method=addProduct 
+2025-12-21T21:00:19.015+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.016+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=9 | action=WRITE | method=addProduct 
+2025-12-21T21:00:19.051+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:00:19.084+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.UserController          : ACTION | userId=10 | action=READ | method=login 
+2025-12-21T21:00:19.098+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.098+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:00:19.112+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.112+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:00:19.125+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.125+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:00:19.138+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.138+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:00:19.149+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.149+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:00:19.184+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.UserController          : ACTION | userId=1 | action=READ | method=login 
+2025-12-21T21:00:19.196+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.245+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:19.259+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.307+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:19.323+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.369+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:19.382+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.406+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:19.417+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.441+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:19.452+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.476+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:19.487+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.511+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:19.522+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.547+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:19.560+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.608+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchAllProductsGlobal | expensiveCount=26 | totalExpensiveProducts=10
+2025-12-21T21:00:19.620+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.667+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchAllProductsGlobal | expensiveCount=26 | totalExpensiveProducts=10
+2025-12-21T21:00:19.681+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.729+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:19.741+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.788+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:19.801+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.849+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchAllProductsGlobal | expensiveCount=26 | totalExpensiveProducts=10
+2025-12-21T21:00:19.861+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.908+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchAllProductsGlobal | expensiveCount=26 | totalExpensiveProducts=10
+2025-12-21T21:00:19.944+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.UserController          : ACTION | userId=2 | action=READ | method=login 
+2025-12-21T21:00:19.956+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.957+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:00:19.972+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.972+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:00:19.984+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.985+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:00:19.995+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:19.995+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:00:20.008+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.008+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:00:20.022+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.022+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:20.036+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.036+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:20.048+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.049+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:20.060+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.060+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:20.072+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.072+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:20.083+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.084+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=deleteProduct 
+2025-12-21T21:00:20.094+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.094+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=deleteProduct 
+2025-12-21T21:00:20.105+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.105+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=deleteProduct 
+2025-12-21T21:00:20.118+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.176+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=2 | action=READ | method=fetchAllProducts | expensiveCount=3 | totalExpensiveProducts=10
+2025-12-21T21:00:20.190+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.242+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=2 | action=READ | method=fetchAllProducts | expensiveCount=3 | totalExpensiveProducts=10
+2025-12-21T21:00:20.252+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.306+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=2 | action=READ | method=fetchAllProducts | expensiveCount=3 | totalExpensiveProducts=10
+2025-12-21T21:00:20.319+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.348+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=2 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:20.361+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.391+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=2 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:20.427+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.UserController          : ACTION | userId=3 | action=READ | method=login 
+2025-12-21T21:00:20.439+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.485+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchAllProducts | expensiveCount=3 | totalExpensiveProducts=10
+2025-12-21T21:00:20.498+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.546+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchAllProducts | expensiveCount=3 | totalExpensiveProducts=10
+2025-12-21T21:00:20.559+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.608+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchAllProducts | expensiveCount=3 | totalExpensiveProducts=10
+2025-12-21T21:00:20.619+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.649+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:20.660+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.685+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:20.696+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.725+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:20.737+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.761+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:20.773+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.799+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:20.811+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.860+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchAllProductsGlobal | expensiveCount=26 | totalExpensiveProducts=10
+2025-12-21T21:00:20.872+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:20.922+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchAllProductsGlobal | expensiveCount=26 | totalExpensiveProducts=10
+2025-12-21T21:00:20.970+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.021+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchAllProductsGlobal | expensiveCount=26 | totalExpensiveProducts=10
+2025-12-21T21:00:21.044+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.096+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:21.115+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.180+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:21.200+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.253+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:21.277+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.337+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:21.363+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.420+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:21.465+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.UserController          : ACTION | userId=4 | action=READ | method=login 
+2025-12-21T21:00:21.491+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.516+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:21.531+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.555+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:21.568+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.593+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:21.607+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.635+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:21.648+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.648+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=deleteProduct 
+2025-12-21T21:00:21.660+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.660+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=deleteProduct 
+2025-12-21T21:00:21.675+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.675+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=deleteProduct 
+2025-12-21T21:00:21.688+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.688+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:21.700+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.701+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:21.714+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.714+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:21.726+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.772+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchAllProducts | expensiveCount=1 | totalExpensiveProducts=10
+2025-12-21T21:00:21.786+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.835+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchAllProducts | expensiveCount=1 | totalExpensiveProducts=10
+2025-12-21T21:00:21.850+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.897+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchAllProducts | expensiveCount=1 | totalExpensiveProducts=10
+2025-12-21T21:00:21.913+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.938+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:21.951+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:21.975+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:21.985+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.008+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:22.041+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.UserController          : ACTION | userId=5 | action=READ | method=login 
+2025-12-21T21:00:22.053+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.099+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=5 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:22.111+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.156+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=5 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:22.168+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.213+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=5 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:22.224+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.249+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=5 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:22.259+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.282+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=5 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:22.293+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.317+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=5 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:22.329+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.330+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=addProduct 
+2025-12-21T21:00:22.343+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.343+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=addProduct 
+2025-12-21T21:00:22.354+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.354+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:22.366+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.366+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:22.398+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.UserController          : ACTION | userId=6 | action=READ | method=login 
+2025-12-21T21:00:22.410+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.458+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchAllProductsGlobal | expensiveCount=26 | totalExpensiveProducts=10
+2025-12-21T21:00:22.468+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.514+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchAllProductsGlobal | expensiveCount=26 | totalExpensiveProducts=10
+2025-12-21T21:00:22.525+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.571+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchAllProductsGlobal | expensiveCount=26 | totalExpensiveProducts=10
+2025-12-21T21:00:22.583+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.630+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchAllProductsGlobal | expensiveCount=26 | totalExpensiveProducts=10
+2025-12-21T21:00:22.642+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.688+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchAllProductsGlobal | expensiveCount=26 | totalExpensiveProducts=10
+2025-12-21T21:00:22.700+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.747+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:22.758+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.805+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:22.815+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.864+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:22.875+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.923+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:22.935+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:22.982+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:22.993+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.040+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:23.051+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.097+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:23.108+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.155+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:23.167+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.218+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:23.230+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.276+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:23.288+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.311+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:23.322+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.346+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:23.357+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.381+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:23.416+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.UserController          : ACTION | userId=7 | action=READ | method=login 
+2025-12-21T21:00:23.429+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.476+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:00:23.488+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.533+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:00:23.545+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.590+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:00:23.603+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.603+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:00:23.615+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.615+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:00:23.628+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.629+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:00:23.640+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.641+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:23.654+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.654+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:23.665+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.665+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:23.676+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.676+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=deleteProduct 
+2025-12-21T21:00:23.688+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.688+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=deleteProduct 
+2025-12-21T21:00:23.698+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.745+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchAllProductsGlobal | expensiveCount=27 | totalExpensiveProducts=10
+2025-12-21T21:00:23.758+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.805+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchAllProductsGlobal | expensiveCount=27 | totalExpensiveProducts=10
+2025-12-21T21:00:23.818+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.867+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchAllProductsGlobal | expensiveCount=27 | totalExpensiveProducts=10
+2025-12-21T21:00:23.879+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.928+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:23.939+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:23.988+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:23.998+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.047+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:24.081+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.UserController          : ACTION | userId=8 | action=READ | method=login 
+2025-12-21T21:00:24.093+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.142+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:24.158+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.211+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:24.226+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.271+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:24.283+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.329+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:24.342+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.392+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:24.403+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.450+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:24.461+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.507+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:24.519+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.565+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:24.578+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.623+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:24.634+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.679+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=4 | totalExpensiveProducts=10
+2025-12-21T21:00:24.690+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.690+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:24.701+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.701+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:24.713+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.713+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:24.726+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.726+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:24.737+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.737+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:24.748+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.748+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=deleteProduct 
+2025-12-21T21:00:24.760+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.760+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=deleteProduct 
+2025-12-21T21:00:24.770+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.770+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=deleteProduct 
+2025-12-21T21:00:24.781+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.830+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProductsGlobal | expensiveCount=27 | totalExpensiveProducts=10
+2025-12-21T21:00:24.842+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.890+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProductsGlobal | expensiveCount=27 | totalExpensiveProducts=10
+2025-12-21T21:00:24.922+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.UserController          : ACTION | userId=9 | action=READ | method=login 
+2025-12-21T21:00:24.934+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.958+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:24.969+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:24.995+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:25.007+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.030+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:25.041+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.065+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:25.075+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.099+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:25.110+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.156+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:00:25.167+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.211+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:00:25.224+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.268+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:00:25.279+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.326+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:00:25.337+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.383+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:00:25.395+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.443+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProductsGlobal | expensiveCount=27 | totalExpensiveProducts=10
+2025-12-21T21:00:25.456+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.502+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProductsGlobal | expensiveCount=27 | totalExpensiveProducts=10
+2025-12-21T21:00:25.513+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.562+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProductsGlobal | expensiveCount=27 | totalExpensiveProducts=10
+2025-12-21T21:00:25.573+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.620+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProductsGlobal | expensiveCount=27 | totalExpensiveProducts=10
+2025-12-21T21:00:25.632+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.681+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProductsGlobal | expensiveCount=27 | totalExpensiveProducts=10
+2025-12-21T21:00:25.716+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.UserController          : ACTION | userId=10 | action=READ | method=login 
+2025-12-21T21:00:25.728+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.728+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:00:25.738+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.738+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:00:25.750+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.750+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:00:25.761+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.761+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:25.772+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.773+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:25.785+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.785+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=updateProduct 
+2025-12-21T21:00:25.796+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.796+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=deleteProduct 
+2025-12-21T21:00:25.807+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.807+01:00  INFO 148369 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=deleteProduct 
+2025-12-21T21:00:25.818+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.866+01:00  INFO 148369 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchAllProducts | expensiveCount=3 | totalExpensiveProducts=10
+2025-12-21T21:00:25.876+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.922+01:00  INFO 148369 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchAllProducts | expensiveCount=3 | totalExpensiveProducts=10
+2025-12-21T21:00:25.934+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:25.980+01:00  INFO 148369 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchAllProducts | expensiveCount=3 | totalExpensiveProducts=10
+2025-12-21T21:00:25.990+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:26.038+01:00  INFO 148369 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchAllProductsGlobal | expensiveCount=28 | totalExpensiveProducts=10
+2025-12-21T21:00:26.050+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:26.098+01:00  INFO 148369 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchAllProductsGlobal | expensiveCount=28 | totalExpensiveProducts=10
+2025-12-21T21:00:26.109+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:26.155+01:00  INFO 148369 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchAllProductsGlobal | expensiveCount=28 | totalExpensiveProducts=10
+2025-12-21T21:00:26.167+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:26.214+01:00  INFO 148369 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:26.225+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:26.275+01:00  INFO 148369 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:00:26.287+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:00:26.335+01:00  INFO 148369 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:13.054+01:00  INFO 149316 --- [main] o.example.logs_tp_backend_spooned.Main   : Starting Main using Java 21.0.9 with PID 149316 (/home/imene/IdeaProjects/logs_tp_backend_spooned/target/classes started by imene in /home/imene/IdeaProjects/logs_tp_backend_spooned)
+2025-12-21T21:06:13.056+01:00  INFO 149316 --- [main] o.example.logs_tp_backend_spooned.Main   : No active profile set, falling back to 1 default profile: "default"
+2025-12-21T21:06:13.884+01:00  INFO 149316 --- [main] o.example.logs_tp_backend_spooned.Main   : Started Main in 1.144 seconds (process running for 1.56)
+2025-12-21T21:06:22.880+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:06:22.926+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.UserController          : ACTION | userId=1 | action=READ | method=login 
+2025-12-21T21:06:22.957+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:22.958+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=1 | action=WRITE | method=addProduct 
+2025-12-21T21:06:22.974+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:22.974+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=1 | action=WRITE | method=addProduct 
+2025-12-21T21:06:22.987+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:22.988+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=1 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.000+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.001+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=1 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.016+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.016+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=1 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.054+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:06:23.086+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.UserController          : ACTION | userId=2 | action=READ | method=login 
+2025-12-21T21:06:23.101+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.101+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.115+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.116+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.127+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.128+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.142+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.142+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.156+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.157+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.191+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:06:23.228+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.UserController          : ACTION | userId=3 | action=READ | method=login 
+2025-12-21T21:06:23.243+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.244+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=3 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.255+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.256+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=3 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.269+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.269+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=3 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.282+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.282+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=3 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.297+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.297+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=3 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.336+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:06:23.373+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.UserController          : ACTION | userId=4 | action=READ | method=login 
+2025-12-21T21:06:23.388+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.388+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.402+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.403+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.416+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.416+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.427+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.428+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.440+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.441+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.475+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:06:23.513+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.UserController          : ACTION | userId=5 | action=READ | method=login 
+2025-12-21T21:06:23.527+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.527+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.543+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.544+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.557+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.557+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.571+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.572+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.586+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.586+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.621+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:06:23.657+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.UserController          : ACTION | userId=6 | action=READ | method=login 
+2025-12-21T21:06:23.670+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.670+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=6 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.683+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.683+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=6 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.695+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.695+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=6 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.709+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.710+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=6 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.722+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.722+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=6 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.757+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:06:23.798+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.UserController          : ACTION | userId=7 | action=READ | method=login 
+2025-12-21T21:06:23.811+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.812+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.823+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.824+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.837+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.837+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.851+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.852+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.864+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.865+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.901+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:06:23.936+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.UserController          : ACTION | userId=8 | action=READ | method=login 
+2025-12-21T21:06:23.951+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.952+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.966+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.966+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.980+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.980+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=addProduct 
+2025-12-21T21:06:23.992+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:23.992+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=addProduct 
+2025-12-21T21:06:24.006+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.006+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=addProduct 
+2025-12-21T21:06:24.042+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:06:24.077+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.UserController          : ACTION | userId=9 | action=READ | method=login 
+2025-12-21T21:06:24.088+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.088+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=9 | action=WRITE | method=addProduct 
+2025-12-21T21:06:24.101+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.102+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=9 | action=WRITE | method=addProduct 
+2025-12-21T21:06:24.122+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.122+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=9 | action=WRITE | method=addProduct 
+2025-12-21T21:06:24.136+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.137+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=9 | action=WRITE | method=addProduct 
+2025-12-21T21:06:24.164+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.164+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=9 | action=WRITE | method=addProduct 
+2025-12-21T21:06:24.222+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.UserController          : ACTION | userId=null | action=WRITE | method=register 
+2025-12-21T21:06:24.274+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.UserController          : ACTION | userId=10 | action=READ | method=login 
+2025-12-21T21:06:24.286+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.287+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:06:24.299+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.300+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:06:24.314+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.315+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:06:24.327+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.327+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:06:24.341+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.341+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:06:24.387+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.UserController          : ACTION | userId=1 | action=READ | method=login 
+2025-12-21T21:06:24.401+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.462+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:24.477+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.534+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:24.546+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.600+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:24.617+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.642+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:24.654+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.678+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:24.689+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.712+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:24.723+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.747+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:24.759+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.784+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:24.798+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.846+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchAllProductsGlobal | expensiveCount=18 | totalExpensiveProducts=10
+2025-12-21T21:06:24.858+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.904+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchAllProductsGlobal | expensiveCount=18 | totalExpensiveProducts=10
+2025-12-21T21:06:24.917+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:24.965+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:24.979+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.030+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:25.044+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.091+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchAllProductsGlobal | expensiveCount=18 | totalExpensiveProducts=10
+2025-12-21T21:06:25.106+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.155+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=1 | action=READ | method=fetchAllProductsGlobal | expensiveCount=18 | totalExpensiveProducts=10
+2025-12-21T21:06:25.193+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.UserController          : ACTION | userId=2 | action=READ | method=login 
+2025-12-21T21:06:25.212+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.213+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:06:25.230+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.230+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:06:25.250+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.250+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:06:25.266+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.266+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:06:25.295+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.295+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=addProduct 
+2025-12-21T21:06:25.318+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.318+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:25.334+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.335+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:25.352+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.353+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:25.370+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.371+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:25.396+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.396+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:25.412+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.412+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=deleteProduct 
+2025-12-21T21:06:25.426+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.426+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=deleteProduct 
+2025-12-21T21:06:25.439+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.439+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=2 | action=WRITE | method=deleteProduct 
+2025-12-21T21:06:25.458+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.505+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=2 | action=READ | method=fetchAllProducts | expensiveCount=1 | totalExpensiveProducts=10
+2025-12-21T21:06:25.518+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.564+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=2 | action=READ | method=fetchAllProducts | expensiveCount=1 | totalExpensiveProducts=10
+2025-12-21T21:06:25.576+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.623+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=2 | action=READ | method=fetchAllProducts | expensiveCount=1 | totalExpensiveProducts=10
+2025-12-21T21:06:25.635+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.659+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=2 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:25.672+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.696+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=2 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:25.732+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.UserController          : ACTION | userId=3 | action=READ | method=login 
+2025-12-21T21:06:25.745+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.790+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:25.801+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.847+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:25.858+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.902+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:25.915+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.939+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:25.951+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:25.976+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:25.987+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.013+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:26.024+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.049+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:26.062+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.089+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:26.102+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.149+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchAllProductsGlobal | expensiveCount=17 | totalExpensiveProducts=10
+2025-12-21T21:06:26.161+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.207+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchAllProductsGlobal | expensiveCount=17 | totalExpensiveProducts=10
+2025-12-21T21:06:26.220+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.267+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchAllProductsGlobal | expensiveCount=17 | totalExpensiveProducts=10
+2025-12-21T21:06:26.279+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.325+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:26.338+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.385+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:26.396+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.441+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:26.452+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.498+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:26.510+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.556+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=3 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:26.589+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.UserController          : ACTION | userId=4 | action=READ | method=login 
+2025-12-21T21:06:26.602+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.627+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:26.638+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.662+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:26.675+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.699+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:26.712+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.738+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:26.751+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.751+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=deleteProduct 
+2025-12-21T21:06:26.763+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.764+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=deleteProduct 
+2025-12-21T21:06:26.776+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.777+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=deleteProduct 
+2025-12-21T21:06:26.788+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.788+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:26.800+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.800+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:26.812+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.812+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=4 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:26.822+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.867+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:26.878+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.923+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:26.935+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:26.981+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:26.992+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.016+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:27.028+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.051+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:27.062+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.086+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=4 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:27.122+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.UserController          : ACTION | userId=5 | action=READ | method=login 
+2025-12-21T21:06:27.136+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.183+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=5 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:27.196+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.241+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=5 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:27.254+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.302+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=5 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:27.315+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.340+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=5 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:27.352+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.376+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=5 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:27.388+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.411+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=5 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:27.424+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.424+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=addProduct 
+2025-12-21T21:06:27.437+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.437+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=addProduct 
+2025-12-21T21:06:27.450+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.450+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:27.461+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.461+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=5 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:27.495+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.UserController          : ACTION | userId=6 | action=READ | method=login 
+2025-12-21T21:06:27.509+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.559+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchAllProductsGlobal | expensiveCount=17 | totalExpensiveProducts=10
+2025-12-21T21:06:27.574+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.621+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchAllProductsGlobal | expensiveCount=17 | totalExpensiveProducts=10
+2025-12-21T21:06:27.633+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.679+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchAllProductsGlobal | expensiveCount=17 | totalExpensiveProducts=10
+2025-12-21T21:06:27.690+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.736+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchAllProductsGlobal | expensiveCount=17 | totalExpensiveProducts=10
+2025-12-21T21:06:27.748+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.795+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchAllProductsGlobal | expensiveCount=17 | totalExpensiveProducts=10
+2025-12-21T21:06:27.808+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.855+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:27.867+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.912+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:27.923+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:27.971+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:27.989+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.040+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:28.057+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.107+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:28.121+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.170+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:28.181+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.235+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:28.246+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.292+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:28.304+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.351+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:28.362+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.413+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:28.423+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.449+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:28.460+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.484+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:28.494+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.518+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=6 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:28.551+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.UserController          : ACTION | userId=7 | action=READ | method=login 
+2025-12-21T21:06:28.562+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.605+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchAllProducts | expensiveCount=1 | totalExpensiveProducts=10
+2025-12-21T21:06:28.618+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.662+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchAllProducts | expensiveCount=1 | totalExpensiveProducts=10
+2025-12-21T21:06:28.675+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.719+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchAllProducts | expensiveCount=1 | totalExpensiveProducts=10
+2025-12-21T21:06:28.731+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.731+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:06:28.745+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.746+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:06:28.758+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.758+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=addProduct 
+2025-12-21T21:06:28.770+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.770+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:28.782+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.782+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:28.794+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.794+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:28.805+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.805+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=deleteProduct 
+2025-12-21T21:06:28.816+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.816+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=7 | action=WRITE | method=deleteProduct 
+2025-12-21T21:06:28.827+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.872+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchAllProductsGlobal | expensiveCount=18 | totalExpensiveProducts=10
+2025-12-21T21:06:28.885+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.932+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchAllProductsGlobal | expensiveCount=18 | totalExpensiveProducts=10
+2025-12-21T21:06:28.944+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:28.991+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchAllProductsGlobal | expensiveCount=18 | totalExpensiveProducts=10
+2025-12-21T21:06:29.002+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.049+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchProductByNameGlobal | expensiveCount=1 | totalExpensiveProducts=10
+2025-12-21T21:06:29.060+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.108+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:29.120+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.166+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=7 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:29.202+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.UserController          : ACTION | userId=8 | action=READ | method=login 
+2025-12-21T21:06:29.212+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.258+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:29.270+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.314+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:29.326+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.371+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:29.383+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.426+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:29.438+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.482+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:29.493+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.538+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:29.550+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.594+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:29.606+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.651+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:29.660+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.707+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:29.718+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.763+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:29.774+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.775+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:29.787+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.787+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:29.797+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.798+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:29.810+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.811+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:29.822+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.822+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:29.833+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.834+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=deleteProduct 
+2025-12-21T21:06:29.845+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.846+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=deleteProduct 
+2025-12-21T21:06:29.856+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.857+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=8 | action=WRITE | method=deleteProduct 
+2025-12-21T21:06:29.866+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.912+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProductsGlobal | expensiveCount=16 | totalExpensiveProducts=10
+2025-12-21T21:06:29.922+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:29.967+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=8 | action=READ | method=fetchAllProductsGlobal | expensiveCount=16 | totalExpensiveProducts=10
+2025-12-21T21:06:30.001+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.UserController          : ACTION | userId=9 | action=READ | method=login 
+2025-12-21T21:06:30.015+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.038+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:30.051+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.074+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:30.085+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.109+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:30.120+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.142+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:30.153+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.177+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchProductById | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:30.189+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.236+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:30.248+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.291+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:30.304+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.348+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:30.360+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.404+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:30.417+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.461+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProducts | expensiveCount=2 | totalExpensiveProducts=10
+2025-12-21T21:06:30.473+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.522+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProductsGlobal | expensiveCount=16 | totalExpensiveProducts=10
+2025-12-21T21:06:30.532+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.576+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProductsGlobal | expensiveCount=16 | totalExpensiveProducts=10
+2025-12-21T21:06:30.587+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.633+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProductsGlobal | expensiveCount=16 | totalExpensiveProducts=10
+2025-12-21T21:06:30.647+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.692+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProductsGlobal | expensiveCount=16 | totalExpensiveProducts=10
+2025-12-21T21:06:30.704+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.750+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=9 | action=READ | method=fetchAllProductsGlobal | expensiveCount=16 | totalExpensiveProducts=10
+2025-12-21T21:06:30.783+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.UserController          : ACTION | userId=10 | action=READ | method=login 
+2025-12-21T21:06:30.795+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.795+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:06:30.807+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.807+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:06:30.819+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.819+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=addProduct 
+2025-12-21T21:06:30.830+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.830+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:30.840+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.840+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:30.852+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.853+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=updateProduct 
+2025-12-21T21:06:30.864+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.864+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=deleteProduct 
+2025-12-21T21:06:30.876+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.876+01:00  INFO 149316 --- [http-nio-8080-exec-5] o.e.l.controller.ProductController       : ACTION | userId=10 | action=WRITE | method=deleteProduct 
+2025-12-21T21:06:30.887+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.931+01:00  INFO 149316 --- [http-nio-8080-exec-6] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchAllProducts | expensiveCount=1 | totalExpensiveProducts=10
+2025-12-21T21:06:30.944+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:30.998+01:00  INFO 149316 --- [http-nio-8080-exec-7] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchAllProducts | expensiveCount=1 | totalExpensiveProducts=10
+2025-12-21T21:06:31.010+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:31.053+01:00  INFO 149316 --- [http-nio-8080-exec-8] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchAllProducts | expensiveCount=1 | totalExpensiveProducts=10
+2025-12-21T21:06:31.065+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:31.109+01:00  INFO 149316 --- [http-nio-8080-exec-9] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchAllProductsGlobal | expensiveCount=9 | totalExpensiveProducts=10
+2025-12-21T21:06:31.122+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:31.167+01:00  INFO 149316 --- [http-nio-8080-exec-10] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchAllProductsGlobal | expensiveCount=9 | totalExpensiveProducts=10
+2025-12-21T21:06:31.179+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:31.235+01:00  INFO 149316 --- [http-nio-8080-exec-1] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchAllProductsGlobal | expensiveCount=9 | totalExpensiveProducts=10
+2025-12-21T21:06:31.247+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:31.304+01:00  INFO 149316 --- [http-nio-8080-exec-2] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:31.316+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:31.371+01:00  INFO 149316 --- [http-nio-8080-exec-3] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10
+2025-12-21T21:06:31.384+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION UNKNOWN
+2025-12-21T21:06:31.435+01:00  INFO 149316 --- [http-nio-8080-exec-4] o.e.l.controller.ProductController       : ACTION | userId=10 | action=READ | method=fetchProductByNameGlobal | expensiveCount=0 | totalExpensiveProducts=10

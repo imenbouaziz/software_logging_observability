@@ -2,9 +2,9 @@
   "userKey" : "userId:8",
   "UserType" : "READ_ORIENTED",
   "stats" : {
-    "reads" : 42,
-    "writes" : 40,
-    "searchedExpensive" : 126,
+    "reads" : 14,
+    "writes" : 13,
+    "searchedExpensive" : 94,
     "totalExpensiveProducts" : 10
   }
 }

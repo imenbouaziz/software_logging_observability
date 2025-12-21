@@ -2,8 +2,8 @@
   "userKey" : "userId:4",
   "UserType" : "READ_ORIENTED",
   "stats" : {
-    "reads" : 35,
-    "writes" : 29,
+    "reads" : 12,
+    "writes" : 11,
     "searchedExpensive" : 3,
     "totalExpensiveProducts" : 10
   }

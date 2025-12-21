@@ -1,9 +1,9 @@
 {
   "userKey" : "userId:null",
-  "UserType" : "READ_ORIENTED",
+  "UserType" : "WRITE_ORIENTED",
   "stats" : {
-    "reads" : 79,
-    "writes" : 20,
+    "reads" : 0,
+    "writes" : 10,
     "searchedExpensive" : 0,
     "totalExpensiveProducts" : 0
   }
