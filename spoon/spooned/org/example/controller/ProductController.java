@@ -1,11 +1,14 @@
-package org.example;
+package org.example.controller;
 import java.util.List;
 import java.util.Set;
+import org.example.model.Product;
+import org.example.service.ProductService;
 import org.slf4j.Logger;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
+@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true", maxAge = 3600)
 @RestController
 @RequestMapping("/users/{userId}/products")
 public class ProductController {
@@ -111,5 +114,5 @@ public class ProductController {
         return product;
     }
 
-    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.ProductController.class);
+    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.controller.ProductController.class);
 }

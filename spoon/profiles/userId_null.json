@@ -1,0 +1,10 @@
+{
+  "userKey" : "userId:null",
+  "UserType" : "READ_ORIENTED",
+  "stats" : {
+    "reads" : 79,
+    "writes" : 20,
+    "searchedExpensive" : 0,
+    "totalExpensiveProducts" : 0
+  }
+}

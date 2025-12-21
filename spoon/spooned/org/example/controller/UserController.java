@@ -1,7 +1,10 @@
-package org.example;
+package org.example.controller;
+import org.example.model.User;
+import org.example.service.UserService;
 import org.slf4j.Logger;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.web.bind.annotation.*;
+@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true", maxAge = 3600)
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -33,5 +36,5 @@ public class UserController {
         return user;
     }
 
-    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.UserController.class);
+    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(org.example.logs_tp_backend_spooned.controller.UserController.class);
 }

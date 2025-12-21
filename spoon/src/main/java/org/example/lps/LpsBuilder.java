@@ -1,4 +1,4 @@
-package org.example;
+package org.example.lps;
 
 public class LpsBuilder {
     private String timestamp;
@@ -10,25 +10,32 @@ public class LpsBuilder {
     private String totalExpensiveProducts;
 
     public LpsBuilder timestamp(String ts) {
-        this.timestamp = ts; return this;
+        this.timestamp = ts;
+        return this;
     }
     public LpsBuilder event(String e) {
-        this.event = e; return this;
+        this.event = e;
+        return this;
     }
     public LpsBuilder userId(String id) {
-        this.userId = id; return this;
+        this.userId = id;
+        return this;
     }
     public LpsBuilder action(String a) {
-        this.action = a; return this;
+        this.action = a;
+        return this;
     }
     public LpsBuilder method(String m) {
-        this.method = m; return this;
+        this.method = m;
+        return this;
     }
     public LpsBuilder expensiveCount(String c) {
-        this.expensiveCount = c; return this;
+        this.expensiveCount = c;
+        return this;
     }
     public LpsBuilder totalExpensiveProducts(String t) {
-        this.totalExpensiveProducts = t; return this;
+        this.totalExpensiveProducts = t;
+        return this;
     }
 
     public Lps build() {

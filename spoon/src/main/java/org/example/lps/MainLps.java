@@ -1,8 +1,11 @@
-package org.example;
+package org.example.lps;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.*;
+import java.util.*;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 
 public class MainLps {
 
@@ -15,12 +18,16 @@ public class MainLps {
             return;
         }
 
+        List<Lps> results = new ArrayList<>();
+
         try (BufferedReader br = Files.newBufferedReader(logPath)) {
             String line;
 
             while ((line = br.readLine()) != null) {
                 if (!line.contains("ACTION")) continue;
+
                 Lps lps = ParserLps.parse(line);
+                results.add(lps);
 
                 System.out.println("timestamp: " + lps.getTimestamp());
                 System.out.println("Event: " + lps.getEvent());
@@ -32,6 +39,11 @@ public class MainLps {
                 System.out.println();
             }
         }
+
+        Path output = Paths.get("lps-results.json");
+        ObjectMapper mapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
+        mapper.writeValue(output.toFile(), results);
+
+        System.out.println("Results saved to: " + output.toAbsolutePath());
     }
 }
-

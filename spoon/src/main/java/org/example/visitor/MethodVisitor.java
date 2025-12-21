@@ -1,15 +1,11 @@
-package org.example;
+package org.example.visitor;
 
 import spoon.reflect.code.CtReturn;
 import spoon.reflect.code.CtStatement;
-import spoon.reflect.declaration.CtField;
 import spoon.reflect.declaration.CtMethod;
 import spoon.reflect.declaration.CtType;
 import spoon.reflect.code.CtCodeSnippetStatement;
-import spoon.reflect.declaration.ModifierKind;
 import spoon.reflect.factory.Factory;
-import spoon.reflect.reference.CtTypeReference;
-import spoon.reflect.visitor.Filter;
 
 import java.util.ArrayList;
 import java.util.List;

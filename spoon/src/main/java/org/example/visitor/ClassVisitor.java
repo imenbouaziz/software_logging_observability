@@ -1,4 +1,4 @@
-package org.example;
+package org.example.visitor;
 
 import spoon.reflect.declaration.CtType;
 

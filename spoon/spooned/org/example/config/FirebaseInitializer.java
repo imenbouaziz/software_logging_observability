@@ -1,4 +1,4 @@
-package org.example;
+package org.example.config;
 import java.io.FileInputStream;
 import java.io.IOException;
 import com.google.auth.oauth2.GoogleCredentials;

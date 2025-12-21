@@ -1,9 +1,10 @@
-package org.example;
+package org.example.repository;
 import DataSnapshot;
 import DatabaseError;
 import FirebaseDatabase;
 import ValueEventListener;
 import java.util.concurrent.CompletableFuture;
+import org.example.model.User;
 import com.google.firebase.database.*;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Repository;

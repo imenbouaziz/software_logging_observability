@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.visitor.ClassVisitor;
+import org.example.visitor.MethodVisitor;
 import spoon.Launcher;
 import spoon.reflect.CtModel;
 

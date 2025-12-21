@@ -1,4 +1,4 @@
-package org.example;
+package org.example.lps;
 
 public class Lps {
     private final String timestamp;
@@ -21,24 +21,31 @@ public class Lps {
     }
 
     public String getTimestamp() {
+
         return timestamp;
     }
     public String getEvent() {
+
         return event;
     }
     public String getUserId() {
+
         return userId;
     }
     public String getAction() {
+
         return action;
     }
     public String getMethod() {
+
         return method;
     }
     public String getExpensiveCount() {
+
         return expensiveCount;
     }
     public String getTotalExpensiveProducts() {
+
         return totalExpensiveProducts;
     }
 }

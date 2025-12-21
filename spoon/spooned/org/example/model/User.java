@@ -1,4 +1,4 @@
-package org.example;
+package org.example.model;
 import java.util.List;
 public class User {
     private Integer id;
